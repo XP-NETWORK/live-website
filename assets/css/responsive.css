@@ -16,18 +16,332 @@
 
 @media only screen and (max-width: 991px) {
 
-}
+	.menu_triger {
+	    display: flex;
+	}
+
+	.menu_boxes {
+	    display: block;
+	    position: absolute;
+	    background: #FFFFFF;
+	    border-radius: 8px;
+	    z-index: 9999999;
+	    left: 15px;
+	    width: calc(100vw - 30px);
+	    top: 0;
+	    max-height: calc(100vh - 101px);
+	    overflow: hidden;
+	    padding: 25px 20px;
+	    transition: .1s ease all;
+	    opacity: 0;
+	    visibility: hidden;
+	    box-shadow: 0px 4px 24px rgb(7 17 64 / 10%);
+	}
+
+	.nav_brand {
+	    margin-right: auto;
+	}
+
+	.menu_boxes.active {
+	    opacity: 1;
+	    visibility: visible;
+	    top: 100%;
+	}
+
+	.main_menu_area {
+	    position: relative;
+	}
+
+	.mainMenuBox {
+	    margin: 0;
+	}
+
+	.main_menu {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    padding-bottom: 25px;
+	}
+
+	.main_menu> li {
+	    margin: 1px 0;
+	}
+
+	.drop_menu {
+	    position: unset;
+	    opacity: 1;
+	    visibility: visible;
+	    order: 3;
+	    transition: .2s;
+	    max-height: 0px;
+	    padding: 0px 0;
+	    overflow: hidden;
+	}
+
+	.have_drop_menu {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	li.have_drop_menu.active ul.drop_menu {
+	    max-height: 250px;
+	    visibility: visible;
+	}
+
+	.main_menu> li:last-child {
+		margin-top: 5px;
+	}
+
+	.ms-dd .ms-dd-header .option-selected {
+		background: #fff;
+	}
+
+	.banar_content {
+	    min-height: 500px;
+	    height: 86vw;
+	    max-height: calc(100vh - 130px);
+	}
+
+	.banar_content h1 {
+	    font-size: 42px;
+	}
+
+	.comunityTop p,
+	.banar_content p {
+	    font-size: 16px;
+	}
+
+	body, 
+	.alert_text p, 
+	.cross_contetn p {
+	    font-size: 14px;
+	}
+
+	h2 {
+	    font-size: 26px;
+	}
+
+	.blueBtn, .blueBtn,
+	.blueTBtn, .whitBtn, .blackTBtn {
+	    font-size: 15px;
+	}
+
+	.apiContainRow {
+	    padding: 30px 39px 37px 29px;
+	}
+
+	.xpNetSecureAreaRow {
+	    padding: 30px 30px 30px 30px;
+	}
+
+	.roadMapContainRow {
+	    padding: 85px 50px 56px 50px;
+	    min-height: 464px;
+	}
+
+	section.ourComunityArea {
+	    padding-bottom: 109px;
+	}
+
+	.apiCntent {
+	    padding-left: 30px;
+	    max-width: 383px;
+	}
+
+	.widgetCol.footeRightCo3 {
+		padding-left: 15px;
+	}
+
+	.ms-dd .ms-options {
+	    top: unset;
+	    bottom: 100%;
+	}
+
+
+}/*screen and (max-width: 991px)*/
     
 @media only screen and (min-width: 426px) and (max-width: 767px) {
    
 }
       
 @media only screen and (max-width: 767px) {
+
+	.crossChainboxImg {
+	    position: unset;
+	    display: block;
+	    margin: 0 auto;
+	    display: none;
+	}
+
+	.cross_contetn {
+	    padding-bottom: 30px;
+	    padding-top: 50px;
+	}
+
+	.apiContainRow {
+	    flex-direction: column-reverse;
+	}
+
+	.apiCntent {
+	    width: 100%;
+	    max-width: unset;
+	    padding: 0 0 30px 0;
+	}
+
+	.xpNetSecureAreaRow {
+	    flex-direction: column;
+	}
+
+	.secCntent {
+	    max-width: 100%;
+	    padding: 10px 0 30px 0;
+	}
+
+	.secImg, .apiImg {
+	    margin: 0;
+	    width: 100%;
+	}
+
+	.roadMapContainRow {
+	    flex-direction: column-reverse;
+	    padding: 40px 40px 40px 40px;
+	}
+
+	.roadMapCntent {
+	    margin: 0;
+	    padding: 0 0 30px 0;
+	    width: 100%;
+	}
+
+	.roadMapImg {
+	    width: 100%;
+	}
+
+	.comunityLinks li i {
+	    font-size: 26px;
+	}
+
+	.comunityLinks li a {
+	    font-size: 16px;
+	    padding: 8px 5px;
+	}
+
+	.comunityLinks li {
+	    padding: 0 10px;
+	}
+
+	.footeLeftCol {
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+
+	.footeRightCol .widgetCol {
+	    width: 50%;
+	    min-width: unset;
+	}
+
+	.footBootmLinks {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    padding-right: 0;
+	}
+
+	.footBootmLinks ul {
+	    padding-right: 0;
+	}
+
+	.footBootmLinks p {
+	    margin: 0;
+	}
+
+	.footer_bottom .container {
+	    padding: 0 15px;
+	}
+
+	.footBootmLinks ul li {
+	    margin-right: 40px;
+	}
+
+	.cross_contetn,
+	.addmoreChaBox,
+	.nftsFlyBox,
+	.roadMapContainRow,
+	.apiContainRow {
+	    padding: 30px;
+	}
+
    
-}
+}/*(max-width: 767px)*/
        
 @media only screen and (max-width: 575px) {
-   
+
+	.comunityLinks li {
+	    width: 50%;
+	    display: flex;
+	    justify-content: center;
+	    margin: 10px 0;
+	}
+
+	.comunityLinks {
+	    flex-wrap: wrap;
+	}
+
+	.cross_contetn, 
+	.addmoreChaBox, 
+	.nftsFlyBox, 
+	.roadMapContainRow, 
+	.apiContainRow, 
+	.xpNetSecureAreaRow {
+	    padding: 30px 15px;
+	}
+
+	.secCntent {
+		padding-top: 0;
+	}
+
+	.banar_content h1 {
+	    font-size: 32px;
+	}
+
+	h2 {
+	    font-size: 24px;
+	}
+
+	ul.chainList li {
+	    width: 25%;
+	}
+
+	.addmoreChaBox p br,
+	.apiCntent p br,
+	 .secCntent p br,
+	 .roadMapCntent p br {
+	    display: none;
+	}
+
+
+	.comunityLinks li a {
+	    font-size: 14px;
+	    padding: 0;
+	}
+
+	.comunityLinks li i {
+	    font-size: 16px;
+	    margin-right: 5px;
+	}
+
+	.comunityLinks li {
+	    padding: 0 5px;
+	}
+
+	.comunityLinks {
+	    justify-content: space-between;
+	    margin: 30px 0 30px;
+	}
+
+	section.ourComunityArea {
+	    padding-bottom: 80px;
+	    padding-top: 40px;
+	}
+
 }
     
 @media only screen and (min-width: 320px) and (max-width: 425px) {
