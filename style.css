@@ -49,10 +49,26 @@ h2 {
     font-weight: 800;
     font-size: 34px;
     line-height: 119%;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .blackBtn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: rgb(255 255 255 / 90%);
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 6px;
+    background: #0E1220;
+}
+
+.blackBtn img {
+    margin-left: 5px;
+}
+
+.blackSBtn {
     font-weight: 500;
     font-size: 15px;
     line-height: 126%;
@@ -247,7 +263,7 @@ h2 {
 
 .footer_area {
     background: #1B2232;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .footeLeftCol {
@@ -258,6 +274,7 @@ h2 {
     width: 59%;
     justify-content: space-between;
     flex-grow: 1;
+    margin-left: -23px;
 }
 
 .quick_links h4 {
@@ -285,13 +302,13 @@ h2 {
 
 .footNav {
     color: #fff;
-    padding-left: 10px;
+    padding-left: 0;
+    padding-top: 10px;
 }
 
-.footNav a {
+.footNav> a {
     display: inline-block;
-    margin-bottom: 50px;
-    margin-left: -10px;
+    margin-bottom: 31px;
 }
 
 .footNav h4 {
@@ -304,7 +321,7 @@ h2 {
 }
 
 .footer_bottom {
-    padding-top: 70px;
+    padding-top: 0;
 }
 
 .social_links li a {
@@ -324,7 +341,8 @@ h2 {
 }
 
 .social_links {
-    padding-bottom: 24px;
+    margin-top: -3px;
+    padding-bottom: 22px;
     border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
 
@@ -356,6 +374,7 @@ h2 {
     color: rgba(255, 255, 255, 0.8);
     margin-left: auto;
     padding: 10px 0;
+    opacity: .7;
 }
 
 .copyRight {
@@ -368,12 +387,12 @@ h2 {
 
 .footeRightCol .widgetCol {
     max-width: fit-content;
-    min-width: 162px;
+    min-width: 167px;
 }
 
 .widgetCol.footeRightCo3 {
     padding-right: 0;
-    padding-left: 28px;
+    padding-left: 0;
 }
 
 .mb36 {
@@ -381,7 +400,7 @@ h2 {
 }
 
 .footer_bottom .container {
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 0;
 }
 
@@ -393,11 +412,12 @@ section.banar_area.home_banar {
 }
 
 .banar_content {
-    text-align: center;
-    padding-top: 49px;
-    min-height: 810px;
-    max-width: 620px;
+    padding-top: 103px;
     margin: 0 auto;
+    text-align: left;
+    padding-bottom: 244px;
+    position: relative;
+    padding-left: 5px;
 }
 
 .banar_content h1 {
@@ -406,8 +426,7 @@ section.banar_area.home_banar {
     line-height: 130%;
     display: flex;
     align-items: flex-end;
-    text-align: center;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.044em;
     color: #0F1223;
     margin-bottom: 16px;
 }
@@ -416,7 +435,6 @@ section.banar_area.home_banar {
     font-weight: normal;
     font-size: 18px;
     line-height: 180%;
-    text-align: center;
     color: #1B2135;
     opacity: 0.8;
     margin-bottom: 30px;
@@ -430,7 +448,7 @@ section.banar_area.home_banar {
     color: #fff;
     background: #395CD9;
     border-radius: 6px;
-    padding: 10px 19px;
+    padding: 4px 14px;
 }
 
 .blueBtn img {
@@ -439,11 +457,11 @@ section.banar_area.home_banar {
 
 .homeBanarImg {
     position: absolute;
-    bottom: 52px;
     z-index: -1;
-    left: 56.5%;
+    top: 84px;
+    left: 75%;
+    height: 108%;
     transform: translate(-50%);
-    height: 89.75%;
 }
 
 .crossChainbox {
@@ -470,14 +488,14 @@ section.banar_area.home_banar {
 
 .crossChainboxImg {
     position: absolute;
-    width: 67%;
+    width: 60%;
     z-index: -1;
     top: 0;
-    right: -7.5%;
+    right: 0;
 }
 
 .cross_contetn {
-    padding-top: 75px;
+    padding-top: 96px;
     padding-left: 40px;
     max-width: 452px;
     padding-bottom: 120px;
@@ -495,7 +513,7 @@ section.banar_area.home_banar {
 }
 
 .cross_contetn .blueBtn {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 section.crossChainArea {
@@ -507,7 +525,7 @@ section.crossChainArea {
     background: #FFFFFF;
     box-shadow: 0px 0px 14px rgba(19, 35, 58, 0.04);
     border-radius: 20px;
-    padding: 44px 40px 50px;
+    padding: 44px 40px 58px;
 }
 
 .chainList {
@@ -573,7 +591,7 @@ ul.chainList li {
     background: #0987AE;
     box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
     border-radius: 20px;
-    padding: 44px 40px 50px;
+    padding: 47px 40px 50px 44px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -585,8 +603,9 @@ ul.chainList li {
 .nftsFlyBoxImg {
     position: absolute;
     z-index: -1;
-    right: -2%;
-    bottom: -3%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 section.addMoreNFTs .row> div {
@@ -647,20 +666,23 @@ section.addMoreNFTs .row> div {
     max-width: 363px;
     margin-left: auto;
     color: #fff;
-    padding-top: 16px;
+    padding-top: 34px;
 }
 
 .apiCntent p {
     opacity: 0.62;
-    margin-bottom: 25px;
+    margin-bottom: 34px;
 }
 
 .xpNetSecureAreaRow {
     display: flex;
-    background: #FFFFFF;
+    padding: 50px 50px 47px 40px;
+    position: relative;
     box-shadow: 0px 0px 14px rgba(19, 35, 58, 0.04);
     border-radius: 20px;
-    padding: 50px 50px 50px 40px;
+    min-height: 524px;
+    background: #F0DBD4;
+    z-index: 1;
 }
 
 .secImg {
@@ -670,17 +692,23 @@ section.addMoreNFTs .row> div {
 
 .secImg img {
     display: block;
-    width: 100%;
+    position: absolute;
+    right: -15px;
+    top: -3px;
+    z-index: -1;
+    width: 102.5%;
 }
 
 .secCntent {
     max-width: 390px;
     padding-right: 30px;
-    padding-top: 72px;
+    padding-top: 87px;
 }
 
 .secCntent p {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 180%;
 }
 
 .roadMapContainRow {
@@ -690,19 +718,23 @@ section.addMoreNFTs .row> div {
     border-radius: 20px;
     align-items: flex-start;
     min-height: 524px;
-    padding: 115px 96px 56px 60px;
+    padding: 50px 50px 50px 60px;
 }
 
 .roadMapCntent {
-    margin-left: auto;
     color: #fff;
-    padding-top: 2px;
+    padding-top: 85px;
     padding-left: 30px;
+    margin-left: auto;
+    max-width: 412px;
+    padding-right: 38px;
 }
 
 .roadMapCntent p {
     opacity: .8;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 180%;
 }
 
 .roadMapImg img {
@@ -711,7 +743,8 @@ section.addMoreNFTs .row> div {
 }
 
 .roadMapImg {
-    width: 50%;
+    width: 53%;
+    padding-top: 34px;
 }
 
 .comunityTop {
@@ -728,10 +761,11 @@ section.ourComunityArea {
     font-size: 16px;
     line-height: 180%;
     color: #0E1220;
+    display: inline-block;
 }
 
 .blackTBtn img {
-    margin-left: 10px;
+    margin-left: 4px;
 }
 
 .comunityTop p {
@@ -741,14 +775,15 @@ section.ourComunityArea {
 }
 
 .comunityLinks {
-    margin: 35px 0 38px;
+    margin: 32px auto 38px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 718px;
 }
 
 .comunityLinks li a {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     color: #0E1220;
     letter-spacing: 0.01em;
     padding: 14px 10px;
@@ -758,7 +793,7 @@ section.ourComunityArea {
 }
 
 .comunityLinks li {
-    padding: 0 25px;
+    padding: 0px 10px;
 }
 
 .comunityLinks li i {
@@ -766,6 +801,11 @@ section.ourComunityArea {
     margin-right: 10px;
     line-height: 1;
 }
+
+.comunityLinks li:last-child {
+    padding-right: 36px;
+}
+
 
 .comunityTop h2 {margin-bottom: 23px;}
 
@@ -841,4 +881,67 @@ span.ms-dd-option-image.flag.cn {
 
 .menu-close {
     filter: invert(1) brightness(100);
+}
+
+.addmoreChaBox .blackTBtn {
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.apiCntent h2 {
+    margin-bottom: 21px;
+}
+
+.contactInf li a i {
+    width: 26px;
+    height: 26px;
+    background: #272F3E;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #B3B6BC;
+    margin-right: 12px;
+}
+
+ul.contactInf li a {
+    font-size: 15px;
+    line-height: 116%;
+    letter-spacing: 0.01em;
+    opacity: 0.7;
+}
+
+ul.contactInf li {
+    margin-bottom: 12px;
+}
+
+.footNav ul.contactInf {
+    margin-bottom: 54px;
+    margin-top: 15px;
+}
+
+.languageSelect {
+    margin-top: 15px;
+}
+
+.languageSelect> a {
+    display: flex;
+    padding: 6px;
+    width: 100px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    transition: .2s ease all;
+    color: #fff;
+    font-size: 12px;
+    line-height: 126%;
+}
+
+.languageSelect> a img {
+    display: block;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.languageSelect> a.active {
+    background: #282F3E;
 }
