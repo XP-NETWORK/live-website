@@ -5,9 +5,9 @@ $(document).ready(function(){
 		jQuery(this).toggleClass("active").siblings().removeClass("active");
 	});
 
-	// jQuery(".wallItem").click(function(){
-	// 	jQuery(this).addClass("active").siblings().removeClass("active");
-	// });
+	jQuery(".languageSelect> a").click(function(){
+		jQuery(this).addClass("active").siblings().removeClass("active");
+	});
 
 	jQuery(".menu_triger").click(function(){
 		jQuery(this).toggleClass("active");

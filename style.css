@@ -94,7 +94,22 @@ h2 {
 }
 
 .cross_contetn .bt {
-    /*margin-bottom: 28px;*/
+}
+
+.whiteBtn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 180%;
+    color: #fff;
+    background: #fff;
+    border-radius: 6px;
+    padding: 4px 14px;
+    color: #0F1223;
+}
+
+.whiteBtn img {
+    margin-left: 10px;
 }
 
 .wraper {
@@ -115,23 +130,34 @@ h2 {
 
 /*Header Css Start */
 
+.tigerIcon {
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+}
+
 .menu_triger {
     position: relative;
     z-index: 1;
-    width: 36px;
     height: 36px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     display: none;
-    background: #fff;
     border-radius: 8px;
     transition: .3s;
     flex-shrink: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #040D27;
+    opacity: 0.9;
 }
 
 .menu_triger.active {
-    background: #2853EB;
 }
 
 .menu_triger img {
@@ -147,6 +173,7 @@ h2 {
 .menu_triger.active .manu_bar {
     opacity: 0;
     visibility: hidden;
+    filter: invert(1) brightness(0);
 }
 
 .menu_triger.active .menu-close {
@@ -245,8 +272,8 @@ h2 {
 }
 
 .top_blueArea {
-    background: #2E4593;
     padding: 18px 0 13px 0;
+    background: #3D63F3;
 }
 
 .alert_text p {
@@ -510,6 +537,7 @@ section.banar_area.home_banar {
     color: rgb(255 255 255 / 80%);
     font-size: 15px;
     line-height: 180%;
+    margin-bottom: 20px;
 }
 
 .cross_contetn .blueBtn {
@@ -588,9 +616,6 @@ ul.chainList li {
 
 .nftsFlyBox {
     height: 100%;
-    background: #0987AE;
-    box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
-    border-radius: 20px;
     padding: 47px 40px 50px 44px;
     color: #fff;
     display: flex;
@@ -598,6 +623,9 @@ ul.chainList li {
     position: relative;
     z-index: 2;
     overflow: hidden;
+    background: #5874E0;
+    box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
+    border-radius: 20px;
 }
 
 .nftsFlyBoxImg {
@@ -619,6 +647,7 @@ section.addMoreNFTs .row> div {
 .nftsFlyBox p {
     opacity: 0.9;
     max-width: 398px;
+    font-size: 16px;
 }
 
 .nftsIcons {
@@ -713,7 +742,7 @@ section.addMoreNFTs .row> div {
 
 .roadMapContainRow {
     display: flex;
-    background: #3B89D1;
+    background: #7463DB;
     box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
     border-radius: 20px;
     align-items: flex-start;
@@ -877,10 +906,6 @@ span.ms-dd-option-image.flag.cn {
 
 .menu_boxes {
     display: contents;
-}
-
-.menu-close {
-    filter: invert(1) brightness(100);
 }
 
 .addmoreChaBox .blackTBtn {

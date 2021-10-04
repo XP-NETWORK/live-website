@@ -96,9 +96,6 @@
 	}
 
 	.banar_content {
-	    min-height: 500px;
-	    height: 86vw;
-	    max-height: calc(100vh - 130px);
 	}
 
 	.banar_content h1 {
@@ -163,13 +160,28 @@
    
 }
       
+@media only screen and (min-width: 768px) {
+	.mobiOnly {
+		display: none !important;
+	}
+}
+      
 @media only screen and (max-width: 767px) {
+
+	.footeRightCol {
+		margin: 0;
+		padding-left: 0;
+	}
+
+	.deskOnly {
+		display: none !important;
+	}
 
 	.crossChainboxImg {
 	    position: unset;
 	    display: block;
 	    margin: 0 auto;
-	    display: none;
+	    width: 100%;
 	}
 
 	.cross_contetn {
@@ -193,7 +205,8 @@
 
 	.secCntent {
 	    max-width: 100%;
-	    padding: 10px 0 30px 0;
+	    padding: 30px;
+	    FONT-WEIGHT: 500;
 	}
 
 	.secImg, .apiImg {
@@ -270,12 +283,40 @@
 	}
 
    
+   .nftsFlyBoxImg {
+		position: unset;
+		width: auto;
+		margin-right: -30px;
+		margin-bottom: -30px;
+		margin-left: -30px;
+	}
+
+	.secImg img {
+		margin-right: 50px !important;
+		top: unset;
+		width: 116%;
+		position: relative;
+		right: 0;
+		left: auto;
+		transform: unset;
+		flex-shrink: 0;
+		bottom: -38px;
+	}
+
+	.apiContainRow {
+		background: #373E5A;
+	}
+
+	.secImg {position: relative;display: flex;justify-content: center;}
+
+	.xpNetSecureAreaRow {overflow: hidden;padding: 0;}
+
+
 }/*(max-width: 767px)*/
        
 @media only screen and (max-width: 575px) {
 
 	.comunityLinks li {
-	    width: 50%;
 	    display: flex;
 	    justify-content: center;
 	    margin: 10px 0;
@@ -285,21 +326,14 @@
 	    flex-wrap: wrap;
 	}
 
-	.cross_contetn, 
-	.addmoreChaBox, 
-	.nftsFlyBox, 
-	.roadMapContainRow, 
-	.apiContainRow, 
-	.xpNetSecureAreaRow {
-	    padding: 30px 15px;
-	}
-
 	.secCntent {
-		padding-top: 0;
+	padding: 40px 10px 0 10px;
+	margin-bottom: -8vw;
 	}
 
 	.banar_content h1 {
-	    font-size: 32px;
+	    font-size: 28px;
+	    line-height: 140%;
 	}
 
 	h2 {
@@ -307,7 +341,7 @@
 	}
 
 	ul.chainList li {
-	    width: 25%;
+	    width: 20%;
 	}
 
 	.addmoreChaBox p br,
@@ -319,12 +353,12 @@
 
 
 	.comunityLinks li a {
-	    font-size: 14px;
+	    font-size: 0;
 	    padding: 0;
 	}
 
 	.comunityLinks li i {
-	    font-size: 16px;
+	    font-size: 32px;
 	    margin-right: 5px;
 	}
 
@@ -334,13 +368,101 @@
 
 	.comunityLinks {
 	    justify-content: space-between;
-	    margin: 30px 0 30px;
+	    margin: 27px 0 30px;
+	    padding: 0 3px 0 40px;
 	}
 
 	section.ourComunityArea {
-	    padding-bottom: 80px;
+	    padding-bottom: 90px;
 	    padding-top: 40px;
 	}
+
+	.alert_text p {
+		text-align: left;
+	}
+
+	.alert_text p span {
+		display: block;
+	}
+
+	.banar_content {
+		padding-top: 55px;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.blackBtn {
+		padding: 8px 12px;
+	}
+
+	.homeBanarImg {
+		position: unset;
+		transform: unset;
+		width: 107%;
+	}
+
+	.banrMobImg {
+		display: flex;
+		justify-content: center;
+		margin-top: 8px;
+	}
+
+	.cross_contetn {
+		padding: 38px 10px 26px 10px;
+	}
+
+	.addmoreChaBox {
+		padding: 40px 10px 30px 10px;
+	}
+
+	.chainList {
+		max-width: 343px;
+		margin-bottom: 4px;
+		margin-top: 18px;
+	}
+
+	.crossIcons {
+		width: 56px;
+		height: 56px;
+	}
+
+	.apiContainRow {
+		padding: 40px 10px 10px;
+	}
+
+	.apiCntent {
+		padding: 0px 0px 25px;
+	}
+
+	.nftsFlyBoxImg {
+		margin-right: -10px;
+		margin-bottom: -43px;
+		margin-left: -10px;
+		margin-top: 14px;
+	}
+
+	.nftsFlyBox {
+		padding: 40px 10px 43px;
+	}
+
+	.secImg img {
+		margin-right: 7vw !important;
+		margin-top: -21px;
+	}
+
+	.roadMapCntent {
+		padding: 0;
+	}
+
+	.roadMapContainRow {
+		padding: 40px 10px 50px 10px;
+		margin-top: -12px;
+	}
+
+	.roadMapImg {
+		padding: 40px 20px 10px 20px;
+	}
+
 
 }
     
@@ -356,3 +478,158 @@
 
 }
    
+@media only screen and (max-width: 575px) {
+
+	.main_menu_area {
+	    padding: 23px 0 9px 3px;
+	}
+
+	.top_blueArea {
+	    padding: 12px 0 8px 3px;
+	}
+
+	.banar_content p {
+	    padding-right: 34px;
+	    margin-bottom: 36px;
+	}
+
+	.crossChainCointen {
+	    margin-top: -10px;
+	}
+
+	.container {
+	    padding: 0 15px;
+	}
+
+	.cross_contetn .bt {
+	    margin-bottom: 16px;
+	}
+
+	.cross_contetn h2 {
+	    line-height: 140%;
+	    margin-bottom: 22px;
+	}
+
+	.cross_contetn p {
+	    padding-right: 10px;
+	    font-size: 15px;
+	    line-height: 180%;
+	}
+
+	.cross_contetn p br {
+	    display: none;
+	}
+
+	.whiteBtn {
+	    padding: 4px 10px;
+	}
+
+	section.crossChainArea {
+	    margin-bottom: 23px;
+	}
+
+	.addmoreChaBox p {
+	    padding-right: 32px;
+	    margin-top: -5px;
+	}
+
+	.addmoreChaBox p br {
+	    display: none;
+	}
+
+	.addmoreChaBox .blackTBtn {
+	    margin-left: 0;
+	}
+
+	section.addMoreNFTs .row> div {
+	    margin-bottom: 18px;
+	}
+
+	.nftsFlyBox p {
+	    margin-top: -6px;
+	}
+
+	.apiCntent span.bt {
+	    margin-bottom: 13px;
+	}
+
+	.apiCntent h2 {
+	    margin-bottom: 15px;
+	}
+
+	.apiCntent p {
+	    padding-right: 33px;
+	    margin-bottom: 22px;
+	}
+
+	.xpNetSecureAreaRow {
+	    margin-top: -10px;
+	    padding-bottom: -15px;
+	}
+
+	.secCntent h2 {
+	    margin-bottom: 14px;
+	}
+
+	.roadMapCntent p {
+	    font-size: 15px;
+	}
+
+	.comunityTop p {
+	    font-size: 18px;
+	}
+
+	section.ourComunityArea .container {
+	    padding: 0 10px;
+	}
+
+	.comunityTop h2 {
+	    margin-bottom: 8px;
+	}
+
+	.footer_area {
+	    padding-top: 8px;
+	}
+
+	.footeLeftCol {
+	    margin-bottom: 0;
+	}
+
+	.footNav> a {
+	    margin-bottom: 12px;
+	}
+
+	.footeRightCol .widgetCol {
+	    width: 44% !important;
+	    flex-shrink: 0;
+	    max-width: unset;
+	}
+
+	.widgetCol.footeRightCol1, .widgetCol.footeRightCo2, .widgetCol.footeRightCo3 {
+	    display: contents;
+	}
+
+	.footeRightCol.row .quick_links {
+	    width: 50% !important;
+	    padding: 0 15px;
+	    margin-bottom: 30px;
+	}
+
+	.mobiOnly.mobileContact {
+	    margin-bottom: 30px;
+	}
+
+	.footBootmLinks p span {
+	    display: block;
+	}
+
+	section.banar_area.home_banar {
+		background: linear-gradient(180deg, #FAEFEC 50.03%, rgba(247, 233, 229, 0) 75.02%);
+	}
+
+	.quick_links h4 {
+		font-size: 13px;
+	}
+
+
+}
