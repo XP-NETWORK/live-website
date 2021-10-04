@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+h1  {
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 130%;
+}
+
 p {
     margin: 0;
     font-size: 15px;
@@ -93,7 +99,8 @@ h2 {
     margin-bottom: 28px;
 }
 
-.cross_contetn .bt {
+.main_menu_area {
+    background: #fff;
 }
 
 .whiteBtn {
@@ -448,9 +455,6 @@ section.banar_area.home_banar {
 }
 
 .banar_content h1 {
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 130%;
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.044em;
@@ -991,11 +995,6 @@ ul.contactInf li {
 }
 
 .ambaBanCont h1 {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 140%;
-    letter-spacing: 0.03em;
     color: #ffff;
 }
 
@@ -1018,6 +1017,7 @@ ul.contactInf li {
     bottom: 0;
     width: auto;
     height: 100%;
+    z-index: -1;
 }
 
 section.ambas_banar_area {
@@ -1105,12 +1105,6 @@ section.ambassReward {
 }
 
 .ambasReContent h2 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 119%;
-/* or 40px */
-    color: #0E1220;
     margin-bottom: 18px;
 }
 
@@ -1230,6 +1224,7 @@ section.ambassReward {
     outline: none;
     border: 1px solid #BDBECB;
     border-radius: 8px;
+    background: transparent;
 }
 
 .ambassImp {
@@ -1288,6 +1283,7 @@ section.ambassReward {
 }
 
 .mailtoCondi {
+    padding-top: 30px;
     margin-top: auto;
 }
 

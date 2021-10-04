@@ -98,7 +98,7 @@
 	.banar_content {
 	}
 
-	h1 {
+	.banar_content h1 {
 	    font-size: 42px;
 	}
 
@@ -151,20 +151,6 @@
 	.ms-dd .ms-options {
 	    top: unset;
 	    bottom: 100%;
-	}
-
-	.faqContents.accordion .accordion-button {
-	    font-size: 20px;
-	    padding: 20px 0;
-	}
-
-	.footBootmLinks ul li {
-	    margin-right: 30px;
-	}
-
-	.ambaBanBox> img {
-	    height: auto;
-	    width: 50%;
 	}
 
 
@@ -345,7 +331,7 @@
 	margin-bottom: -8vw;
 	}
 
-	h1 {
+	.banar_content h1 {
 	    font-size: 28px;
 	    line-height: 140%;
 	}
@@ -642,116 +628,8 @@
 	}
 
 	.quick_links h4 {
-		font-size: 13px
-	}
-
-	.ambaBanCont .whiteBtn {
-	    font-size: 0;
-	}
-
-	.ambaBanCont .whiteBtn span {
-	    font-size: 16px;
-	    line-height: 180%;
-	}
-
-	.ambaBanBox> img {
-	    position: unset;
-	    margin-left: auto;
-	    width: 100%;
-	    margin-top: -18%;
-	}
-
-	.ambaBanCont {
-	    padding: 40px 24px 0px 24px;
-	}
-
-	section.ambas_banar_area {
-	    margin-bottom: 20px;
-	}
-
-	.ambaBanBox {
-	    background-position: left top;
-	}
-
-	.faqContents.accordion .accordion-button {
-	    font-weight: 600;
-	    font-size: 18px;
-	    line-height: 150%;
-	    padding-right: 75px;
-	}
-
-	.faqContents.accordion .accordion-item {
-	    padding: 0 10px;
-	}
-
-	.faqContents.accordion .accordion-body {
-	    font-size: 15px;
-	    line-height: 170%;
-	}
-
-	section.ambassReward {
-	    margin-top: 40px;
-	}
-
-	.rewardNot {
-	    margin-bottom: 18px;
-	}
-
-	.single_rew_box {
-	    padding: 14px;
-	    padding-bottom: 25px;
-	}
-
-	.rew_title h3 {
-	    font-size: 18px;
-    	line-height: 178%;
-	}
-
-	.rew_title .rePri {
-	    font-size: 18px;
-    	line-height: 178%;
-    	margin-top: 6px;
-	}
-
-	.rew_title {
-	    padding: 12px 0 15px;
-	    margin: 0 10px;
-	}
-
-	.rewordInfList li {
-	    padding: 5px 0;
-	    padding-left: 15px;
-	}
-
-	.rewordInfList {
-	    padding: 0 15px;
-	}
-
-	.ambassForm {
-	    padding: 50px 23px;
-	    border-radius: 0;
-	}
-
-	.ambassForm h3 span {
-	    display: block;
-	}
-
-	section.ambasApplic .container {
-	    padding: 0;
-	}
-
-	.ambassProgCod {
-	    border-radius: 0;
-	    padding: 33px 22px;
-	}
-
-	.rewordInfList li:before {
-	    top: 16px;
-	}
-
-	.rewardNot p br {
-		display: none;
+		font-size: 13px;
 	}
 
 
-}/*(max-width: 575px)*/
+}
