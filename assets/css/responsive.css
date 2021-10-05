@@ -325,6 +325,61 @@
 
 	.xpNetSecureAreaRow {overflow: hidden;padding: 0;}
 
+	.commu_banar_area {
+	    background-image: url('../img/commu/commu_banar_mob.png') !important;
+	    background-size: cover;
+	    background-position: center bottom;
+	    padding-top: 43px;
+	    padding-bottom: 316px;
+	}
+
+	.commuBanarCont p {
+	    font-size: 16px;
+	    margin-bottom: 70px;
+	}
+
+	.commuLinks li a {
+	    width: 59px;
+	    height: 50px;
+	    font-size: 22px;
+	}
+
+	.commuLinks li {
+	    margin-right: 11px;
+	}
+
+	section.communityListArea {
+	    padding-top: 23px;
+	}
+
+	section.communityListArea .mb30 {
+	    margin-bottom: 20px;
+	}
+
+	section.ambasApplic.commAppli .container {
+	    padding: 0 15px;
+	}
+
+	.ambassProgCod.becomeAmbass {
+	    border-radius: 20px;
+	    padding-top: 40px;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    background: #152543;
+	}
+
+
+	.ambassProgCod.becomeAmbass> img {
+	    margin-bottom: -34px;
+	    margin-top: -60px;
+	    margin-right: -16px !important;
+	    height: 217px;
+	}
+
+	.becomeAmbass.blueBg {
+	    background: #5977EA;
+	    min-height: 415px;
+	}
 
 }/*(max-width: 767px)*/
        

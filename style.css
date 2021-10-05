@@ -1366,6 +1366,7 @@ section.communityListArea {
     flex-direction: column;
     text-align: center;
     padding: 26px 26px 34px;
+    height: 100%;
 }
 
 .sinComLink a {
@@ -1426,6 +1427,11 @@ section.communityListArea {
 
 .ambassProgCod.becomeAmbass p {
     margin-bottom: 30px;
+    opacity: .8;
+    font-size: 15px;
+    line-height: 170%;
+    padding-right: 10px;
+
 }
 
 .becomeAmbass.blueBg {
