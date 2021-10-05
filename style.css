@@ -1212,21 +1212,7 @@ section.ambassReward {
     color: #030C21;
     margin-bottom: 40px;
 }
-
-.ambassForm input, .ambassForm select, .ambassForm textarea {
-    display: block;
-    width: 100%;
-    border: 0;
-    box-shadow: none;
-    height: 48px;
-    color: rgb(3 12 33 / 65%);
-    padding: 0 14px;
-    outline: none;
-    border: 1px solid #BDBECB;
-    border-radius: 8px;
-    background: transparent;
-}
-
+ 
 .ambassImp {
     display: flex;
     align-items: center;
@@ -1237,16 +1223,63 @@ section.ambassReward {
     position: relative;
 }
 
-.ambassImp i {
+.inputs i {
     color: #0088CC;
     font-size: 18px;
     position: absolute;
     left: 14px;
+    top: 15px;
 }
 
-.ambassForm input::placeholder, .ambassForm select, .ambassForm textarea::placeholder {
-    color: rgb(3 12 33 / 40%);
+.inputs {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    position: relative;
 }
+
+.inputs.telegAcc input {
+    padding-left: 45px;
+}
+
+
+.inputs .ms-options-wrap button {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #BDBECB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+    color: #030C21;
+    font-size: 16px !important;
+    line-height: 126%;
+    padding: 13px 10px 13px 16px;
+}
+
+
+.inputs input:focus, .inputs select:focus, .inputs textarea:focus {
+    border: 1px solid rgb(3 12 33 / 98%);
+}
+
+.inputs.ambasMess textarea {
+    padding: 14px;
+    height: 116px;
+}
+
+.submit_job button {
+    display: block;
+    margin: 0 auto;
+    background: #2853EB;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 129%;
+    color: #fff;
+    padding: 11px 27px;
+}
+
 
 .ambassImp.telegAcc input {padding-left: 45px;}
 
@@ -1255,9 +1288,6 @@ section.ambassReward {
     height: 116px;
 }
 
-.ambassForm input:focus, .ambassForm select:focus, .ambassForm textarea:focus {
-    border: 1px solid rgb(3 12 33 / 98%);
-}
 
 .submitAppli button {
     display: block;
@@ -1481,4 +1511,63 @@ section.communityListArea {
 
 .commuLinks li {
     margin-right: 12px;
+}
+
+.ms-options-wrap>.ms-options>ul label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ms-options-wrap>.ms-options>ul input[type=checkbox] {
+    position: unset;
+    margin-bottom: 2px;
+}
+
+.inputs> input {
+    height: 48px;
+}
+
+.inputs> input, 
+.inputs> select, 
+.inputs> textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    color: rgb(3 12 33 / 65%);
+    padding: 0 14px;
+    outline: none;
+    border: 1px solid #BDBECB;
+    border-radius: 8px;
+    background: transparent;
+    color: #030c21;
+}
+
+span.invalid_text_email,
+span.invalid_text {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 126%;
+    letter-spacing: 0.02em;
+    color: #F21867;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease all;
+    margin-top: 2px;
+}
+
+input.invali_inp,
+textarea.invali_inp,
+input.invali_inp_email {
+    background: #FBF2F5;
+    border: 1px solid #F21867;
+}
+
+input.invali_inp+span.invalid_text {
+    opacity: 1;
+    visibility: visible;
 }
