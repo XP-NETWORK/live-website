@@ -1354,3 +1354,125 @@ section.ambassReward {
 .sendmMailCoor i {
     margin-right: 10px;
 }
+
+section.communityListArea {
+    padding-top: 40px;
+}
+
+.sinComLink {
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 26px 26px 34px;
+}
+
+.sinComLink a {
+    display: contents;
+}
+
+.commLinkIcon {
+    background: #E6EBF2;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #0E1C32;
+    font-size: 29px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+.chinaComm {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.commLinkTit {
+    color: #0F1B23;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 119%;
+}
+
+.borderLine {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #DADBE2;
+}
+
+.ambassProgCod.becomeAmbass {
+    display: block;
+    overflow: hidden;
+}
+
+.ambassProgCod.becomeAmbass> img {
+    display: block;
+    margin-right: -44px;
+    height: 350px;
+    margin-left: auto;
+    margin-bottom: -33px;
+    margin-top: -99px;
+    pointer-events: none;
+}
+
+.ambassProgCod.becomeAmbass p {
+    margin-bottom: 30px;
+}
+
+.becomeAmbass.blueBg {
+    background: #5977EA;
+    min-height: 340px;
+}
+
+.commu_banar_area {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+    padding-bottom: 160px;
+}
+
+.commuBanarCont {
+    max-width: 497px;
+}
+
+.commuBanarCont h1 {
+    margin-bottom: 16px;
+}
+
+.commuBanarCont p {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 33px;
+}
+
+.commuLinks {
+    display: flex;
+}
+
+.commuLinks li a {
+    width: 62px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0E1C32;
+    background: #fff;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.commuLinks li {
+    margin-right: 12px;
+}
