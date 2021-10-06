@@ -516,7 +516,8 @@
 
 	.secImg img {
 		margin-right: 7vw !important;
-		}
+		margin-top: -21px;
+	}
 
 	.roadMapCntent {
 		padding: 0;
