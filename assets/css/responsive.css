@@ -381,9 +381,59 @@
 	    min-height: 415px;
 	}
 
+
+	.roadmap_list {
+	    padding: 0 0px 0 45px;
+	    margin: 0 5px;
+	}
+
+
+	.sin_map_box:before {
+	    left: -25px;
+	    width: 3px;
+	    height: 114%;
+	}
+
+	.sin_map_box:after {
+	    left: -34px;
+	    width: 20px;
+	    height: 20px;
+	    margin-bottom: 0;
+	}
+
+	.sin_map_box.activeLine.currentLine .sin_map_cont:after {
+	    left: -42px;
+	    width: 36px;
+	    height: 36px;
+	    margin-bottom: -8px;
+	}
+
+	.sin_map_box {
+	    padding: 30px 16px;
+	}
+
+	.sin_map_cont ul li {
+	    font-size: 15px;
+	    line-height: 150%;
+	}
+
+	.roadBanarCont p {
+	    line-height: 130%;
+	    padding: 24px 14px;
+	}
+
+	section.roadmap_banar_area {
+	    padding: 60px 0 60px;
+	}
+
 }/*(max-width: 767px)*/
        
 @media only screen and (max-width: 575px) {
+	
+	.roadmap_list {
+	    padding: 0 0px 0 35px;
+	    margin: 0;
+	}
 
 	.comunityLinks li {
 	    display: flex;

@@ -1614,6 +1614,7 @@ section.roadmaps_area .container {
 .roadmap_list {
     padding: 0 62px;
     position: relative;
+    margin: 0 15px;
 }
 
 .sin_map_cont h4 {
