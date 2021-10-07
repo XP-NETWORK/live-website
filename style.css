@@ -145,6 +145,11 @@ h2 {
 
 /*Header Css Start */
 
+header#main_header {
+    position: relative;
+    z-index: 11111111;
+}
+
 .tigerIcon {
     display: flex;
     position: relative;
@@ -168,16 +173,24 @@ h2 {
     font-size: 15px;
     line-height: 126%;
     letter-spacing: 0.03em;
-    color: #040D27;
+    color: #3D63F3;
     opacity: 0.9;
+    color: #000;
 }
 
-.menu_triger.active {
-}
+.menu_triger.active {color: #3D63F3;}
 
 .menu_triger img {
     transition: .3s;
     position: absolute;
+}
+
+.manuBar {
+    filter: invert(1) brightness(0);
+}
+
+.menu_triger.active img.manuBar {
+    filter: unset;
 }
 
 .menu_triger .menu-close {
@@ -213,7 +226,7 @@ h2 {
 }
 
 .main_menu_area {
-    padding: 19px 0 13px;
+    padding: 6px 0 0px;
 }
 
 .main_menu li a {
@@ -240,6 +253,7 @@ h2 {
     background: url("assets/img/icons/down_caret.svg") no-repeat scroll center;
     background-size: contain;
     margin-left: 9px;
+    opacity: .7;
 }
 
 .drop_menu {
@@ -248,13 +262,14 @@ h2 {
     top: 90%;
     background: #fff;
     box-shadow: 0 0 6px rgb(0 0 0 / 13%);
-    padding: 10px 0;
-    border-radius: 3px;
-    min-width: 100%;
+    padding: 16px 0 0 0;
+    min-width: 200px;
     left: 0;
     transition: .2s ease all;
     opacity: 0;
     visibility: hidden;
+    box-shadow: 0px 4px 14px rgba(13, 19, 34, 0.1);
+    border-radius: 10px;
 }
 
 .main_menu> li {
@@ -262,21 +277,46 @@ h2 {
 }
 
 .drop_menu li a {
-    padding: 5px 15px;
     display: block;
-    line-height: 1;
-    margin: 5px 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 126%;
+    color: #040D27;
+    opacity: 0.9;
+    padding: 20px 40px 20px 20px;
+    border-bottom: 1px solid #E6EBF3;
+    white-space: nowrap;
+}
+
+.drop_menu li:last-child a {
+    border: 0;
 }
 
 .main_menu> li> a {
     line-height: 1.5;
-    padding: 5px 0;
+    padding: 21px 0;
 }
 
 .have_drop_menu:hover .drop_menu {
     opacity: 1;
     visibility: visible;
     top: 100%;
+}
+
+.drop_menu li a:after {
+    content: url(assets/img/icons/backArrow.svg);
+    margin-left: 10px;
+    transition: .2s ease all;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: 1px;
+}
+
+.drop_menu li a:hover:after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .connectBtn {
@@ -907,8 +947,27 @@ span.ms-dd-option-image.flag.cn {
 
 .ms-dd .ms-options {
     border: 0;
-    box-shadow: 0 0 6px #0000005e;
-    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(13, 19, 34, 0.1);
+    border-radius: 10px;
+    width: 100px;
+    padding-top: 16px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ms-dd .ms-list-option {
+    background: #fff !important;
+    padding: 20px 20px;
+}
+
+.ms-dd .ms-middle {
+    letter-spacing: 0.03em;
+    color: #040D27;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 126%;
 }
 
 /*Flag Css Start End*/

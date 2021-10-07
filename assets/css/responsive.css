@@ -24,18 +24,18 @@
 	    display: block;
 	    position: absolute;
 	    background: #FFFFFF;
-	    border-radius: 8px;
 	    z-index: 9999999;
 	    left: 15px;
 	    width: calc(100vw - 30px);
 	    top: 0;
-	    max-height: calc(100vh - 101px);
-	    overflow: hidden;
-	    padding: 25px 20px;
+	    max-height: calc(100vh - 72px);
+	    overflow: auto;
+	    padding: 0;
 	    transition: .1s ease all;
 	    opacity: 0;
 	    visibility: hidden;
-	    box-shadow: 0px 4px 24px rgb(7 17 64 / 10%);
+	    box-shadow: 0px 4px 24px rgba(7, 17, 64, 0.1);
+	    border-radius: 8px;
 	}
 
 	.nav_brand {
@@ -46,10 +46,12 @@
 	    opacity: 1;
 	    visibility: visible;
 	    top: 100%;
+	    background: #FBFCFE;
 	}
 
 	.main_menu_area {
 	    position: relative;
+    	padding: 19px 0 13px;
 	}
 
 	.mainMenuBox {
@@ -59,11 +61,12 @@
 	.main_menu {
 	    flex-direction: column;
 	    align-items: flex-start;
-	    padding-bottom: 25px;
+	    padding-bottom: 20px;
 	}
 
 	.main_menu> li {
 	    margin: 1px 0;
+	    width: 100%;
 	}
 
 	.drop_menu {
@@ -75,6 +78,12 @@
 	    max-height: 0px;
 	    padding: 0px 0;
 	    overflow: hidden;
+	    box-shadow: none;
+	    width: 100%;
+	    max-width: unset;
+	    display: block;
+	    background: transparent;
+	    border-radius: 0;
 	}
 
 	.have_drop_menu {
@@ -148,11 +157,6 @@
 		padding-left: 15px;
 	}
 
-	.ms-dd .ms-options {
-	    top: unset;
-	    bottom: 100%;
-	}
-
 	.faqContents.accordion .accordion-button {
 	    font-size: 20px;
 	    padding: 20px 0;
@@ -167,6 +171,72 @@
 	    width: 50%;
 	}
 
+	.connectBtn.blackSBtn {
+	    display: none;
+	}
+
+	.mobileMneuOnly {
+	    display: block !important;
+	}
+
+	.have_drop_menu> a:after {
+		background: transparent;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: bold;
+		content: "\f078";
+		color: #000;
+		opacity: 1;
+	}
+
+	.have_drop_menu:after {
+		display: none;
+	}
+
+	.main_menu> li> a {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 23px 20px 23px 24px;
+	}
+
+	.mobileMneuOnly .blackSBtn {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 297px;
+		text-align: center;
+		display: block;
+		padding: 13px 10px;
+	}
+
+	.meuSocial {
+		padding: 16px 24px;
+		display: flex;
+		align-items: center;
+		border-top: 1px solid #E6EBF3;
+		margin-top: 20px;
+	}
+
+	.meuSocial li a {
+		display: block;
+    	color: rgba(27, 35, 59, 0.5);
+		font-size: 20px;
+		margin-right: 20px;
+	}
+
+	.main_menu> li {
+		border-bottom: 1px solid #E6EBF3;
+	}
+
+	.drop_menu li a {
+		border: 0;
+		padding: 20px 24px;
+	}
+
+	.main_menu> li.have_drop_menu.active> a, 
+	.main_menu> li.have_drop_menu.active> a:after {
+		color: #3D63F3;
+	}
 
 }/*screen and (max-width: 991px)*/
     
@@ -363,8 +433,8 @@
 	.ambassProgCod.becomeAmbass {
 	    border-radius: 20px;
 	    padding-top: 40px;
-	    padding-right: 15px;
-	    padding-left: 15px;
+	    padding-right: 24px;
+	    padding-left: 24px;
 	    background: #152543;
 	}
 
@@ -372,7 +442,7 @@
 	.ambassProgCod.becomeAmbass> img {
 	    margin-bottom: -34px;
 	    margin-top: -60px;
-	    margin-right: -16px !important;
+	    margin-right: -24px !important;
 	    height: 217px;
 	}
 
@@ -409,7 +479,7 @@
 	}
 
 	.sin_map_box {
-	    padding: 30px 16px;
+	    padding: 30px 24px;
 	}
 
 	.sin_map_cont ul li {
@@ -424,6 +494,10 @@
 
 	section.roadmap_banar_area {
 	    padding: 60px 0 60px;
+	}
+
+	.getInContent p br {
+		display: none;
 	}
 
 }/*(max-width: 767px)*/
@@ -446,7 +520,7 @@
 	}
 
 	.secCntent {
-	padding: 40px 10px 0 10px;
+	padding: 40px 24px 0 24px;
 	margin-bottom: -8vw;
 	}
 
@@ -527,11 +601,11 @@
 	}
 
 	.cross_contetn {
-		padding: 38px 10px 26px 10px;
+		padding: 38px 24px 26px 24px;
 	}
 
 	.addmoreChaBox {
-		padding: 40px 10px 30px 10px;
+		padding: 40px 24px  30px 24px;
 	}
 
 	.chainList {
@@ -546,7 +620,7 @@
 	}
 
 	.apiContainRow {
-		padding: 40px 10px 10px;
+		padding: 40px 24px  10px;
 	}
 
 	.apiCntent {
@@ -561,7 +635,7 @@
 	}
 
 	.nftsFlyBox {
-		padding: 40px 10px 43px;
+		padding: 40px 24px  43px;
 	}
 
 	.secImg img {
@@ -573,7 +647,7 @@
 	}
 
 	.roadMapContainRow {
-		padding: 40px 10px 50px 10px;
+		padding: 40px 24px  50px 24px;
 		margin-top: -12px;
 	}
 
@@ -647,7 +721,7 @@
 	}
 
 	.addmoreChaBox p {
-	    padding-right: 32px;
+	    padding-right: 0;
 	    margin-top: -5px;
 	}
 
@@ -781,11 +855,11 @@
 	    font-weight: 600;
 	    font-size: 18px;
 	    line-height: 150%;
-	    padding-right: 75px;
+	    padding-right: 45px;
 	}
 
 	.faqContents.accordion .accordion-item {
-	    padding: 0 10px;
+	    padding: 0 24px;
 	}
 
 	.faqContents.accordion .accordion-body {
