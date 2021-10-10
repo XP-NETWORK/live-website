@@ -11,6 +11,9 @@ body {
     letter-spacing: 0.01em;
     background-color: #F5F6F6;
     color: #0E1220;
+}
+
+body.homepage {
     background-image: linear-gradient(179.97deg, #FAEFEC 14.75%, #F3F4F5 22.45%)
 }
 
@@ -282,10 +285,11 @@ header#main_header {
     min-width: 200px;
     left: 0;
     transition: .2s ease all;
-    opacity: 0;
-    visibility: hidden;
+     opacity: 0; 
+     visibility: hidden; 
     box-shadow: 0px 4px 14px rgba(13, 19, 34, 0.1);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .main_menu> li {
@@ -333,6 +337,11 @@ header#main_header {
 .drop_menu li a:hover:after {
     opacity: 1;
     visibility: visible;
+}
+
+.drop_menu li a:hover {
+    
+background: #EFF2F8;
 }
 
 .connectBtn {
@@ -421,7 +430,7 @@ header#main_header {
 
 .social_links li a {
     display: block;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     opacity: .7;
 }
@@ -518,7 +527,6 @@ section.banar_area.home_banar {
 .banar_content h1 {
     display: flex;
     align-items: flex-end;
-    letter-spacing: 0.044em;
     color: #0F1223;
     margin-bottom: 16px;
 }
@@ -785,6 +793,7 @@ section.addMoreNFTs .row> div {
     min-height: 524px;
     background: #F0DBD4;
     z-index: 1;
+    overflow: hidden;
 }
 
 .secImg {
@@ -1396,6 +1405,22 @@ section.ambassReward {
     padding: 11px 27px;
 }
 
+.submit_job button:hover {
+    background: #0E1220;
+}
+
+.submit_job button img {
+    margin-right: -18px;
+    opacity: 1;
+    visibility: hidden;
+    transition: .2s ease all;
+}
+
+.submit_job button:hover img {
+    margin-right: -8px;
+    opacity: 1;
+    visibility: visible;
+}
 
 .ambassImp.telegAcc input {padding-left: 45px;}
 
@@ -1495,6 +1520,11 @@ section.ambassReward {
     border-radius: 8px;
     border: 1px solid #2853EB;
     padding: 0 16px 0 11px;
+}
+
+.telegLink:hover, .sendmMailCoor:hover {
+    color: #fff;
+    background: #2853EB;
 }
 
 .sendmMailCoor i {

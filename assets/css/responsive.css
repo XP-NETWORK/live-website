@@ -290,6 +290,7 @@
       
 @media only screen and (max-width: 767px) {
 
+
 	.footeRightCol {
 		margin: 0;
 		padding-left: 0;
@@ -406,32 +407,29 @@
 
    
    .nftsFlyBoxImg {
-		position: unset;
-		width: auto;
-		margin-right: -30px;
-		margin-bottom: -30px;
-		margin-left: -30px;
+		position: absolute;
+		margin-right: 0;
+		margin-bottom: -2vw;
+		width: 100%;
 	}
 
 	.secImg img {
-		margin-right: 50px !important;
-		top: unset;
-		width: 116%;
-		position: relative;
-		right: 0;
-		left: auto;
-		transform: unset;
+		top: auto;
+		width: 100%;
+		position: absolute;
 		flex-shrink: 0;
-		bottom: -38px;
+		bottom: 0;
 	}
 
 	.apiContainRow {
 		background: #373E5A;
 	}
 
-	.secImg {position: relative;display: flex;justify-content: center;}
+	.secImg {
+    display: contents;
+}
 
-	.xpNetSecureAreaRow {overflow: hidden;padding: 0;}
+	.xpNetSecureAreaRow {overflow: hidden;padding: 0;min-height: unset;padding-bottom: 89vw;}
 
 	.commu_banar_area {
 	    background-image: url('../img/commu/commu_banar_mob.png') !important;
@@ -537,6 +535,12 @@
 	.getInContent p br {
 		display: none;
 	}
+
+
+	.nftsFlyBox {
+		padding-bottom: 90vw;
+	}
+
 
 }/*(max-width: 767px)*/
        
@@ -678,18 +682,14 @@ margin: 0;
 	}
 
 	.nftsFlyBoxImg {
-		margin-right: -10px;
-		margin-bottom: -43px;
-		margin-left: -10px;
-		margin-top: 14px;
 	}
 
 	.nftsFlyBox {
-		padding: 40px 24px  43px;
+		padding-right: 24px;
+		padding-left: 24px;
 	}
 
 	.secImg img {
-		margin-right: 7vw !important;
 		}
 
 	.roadMapCntent {
@@ -805,8 +805,6 @@ margin: 0;
 	}
 
 	.xpNetSecureAreaRow {
-	    margin-top: -10px;
-	    padding-bottom: -15px;
 	}
 
 	.secCntent h2 {
