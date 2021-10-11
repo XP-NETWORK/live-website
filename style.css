@@ -539,6 +539,7 @@ section.banar_area.home_banar {
     margin-bottom: 16px;
 }
 
+.subt,
 .banar_content p {
     font-weight: normal;
     font-size: 18px;
@@ -2414,4 +2415,260 @@ button.submitBtn:hover {
     height: 14px;
     margin-top: -7px;
     margin-right: 7px;
+}
+
+section.stakeContainer {
+    padding: 66px 0 74px;
+}
+
+.stakeBanar {
+    max-width: 616px;
+    margin: 0 auto;
+}
+
+.stakeBanar h1 {
+    margin-bottom: 16px;
+}
+
+.stakeBanar p {
+    margin-bottom: 20px;
+}
+
+.blackBtn.blackBorBtn {
+    background: transparent;
+    color: #0E1220;
+    border: 1px solid #0E1220;
+}
+
+.blackBtn.blackBorBtn:hover {
+    background: #0E1220;
+    color: #fff;
+}
+
+.blackBtn.blackBorBtn:hover img {
+    filter: invert(1) brightness(1000);
+}
+
+.btns_box a {
+    margin: 5px 15px;
+}
+
+.calculateBox, .nftRewardBox {
+    padding: 25px 40px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
+    border-radius: 20px;
+    height: 100%;
+}
+
+.calculateBox h2, .nftRewardBox h2 {
+    margin-bottom: 25px;
+}
+
+.calculateBox label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #0F1223;
+}
+
+.singleInp label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.singleInp label span {
+    opacity: .7;
+    font-weight: 400;
+}
+
+.selInpGro {
+    display: flex;
+    background: #FBFCFF;
+    border: 1px solid #E5E8F0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.selInpGro input {
+    display: block;
+    flex-grow: 1;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #040D27;
+    height: 48px;
+    padding: 10px 16px;
+}
+
+.selInpGro select {
+    border: 0;
+    outline: none;
+    background: transparent;
+    appearance: none;
+    padding: 10px 16px;
+    min-width: 120px;
+    text-align: right;
+}
+
+.selecDurat> label {
+    margin-bottom: 18px;
+}
+
+.durationGroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.durationGroup> div {
+    display: contents;
+}
+
+.duraSInp input {
+    display: none;
+}
+
+.duraSInp label {
+    display: block;
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #040D27;
+    border: 1px solid transparent;
+    padding: 12px 12px;
+    border-radius: 6px;
+    flex-grow: 1;
+    max-width: 122px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #F3F6FC;
+}
+
+.duraSInp:last-child label {
+    margin-right: 0;
+}
+
+.duraSInp input:checked + label {
+    border: 1px solid #3180F7;
+    color: #3180F7;
+    background: transparent;
+}
+
+.selInpGro input::-webkit-outer-spin-button,
+.selInpGro input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.selInpGro input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.estEpyInp> label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.estiReward {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.reWordValue p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 126%;
+    margin-bottom: 13px;
+}
+
+.reWordValue {
+    text-align: right;
+}
+
+.reWordValue span {
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #0F1223;
+    opacity: 0.6;
+}
+
+.nftRewarImg img {
+    display: block;
+    width: 100%;
+    margin-bottom: 47px;
+}
+
+.nftRewardBox .blackTBtn {
+    display: table;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+button.blackBtn {
+    outline: none;
+    border: 0;
+}
+
+.stakeBtn {
+    margin-top: 45px;
+}
+
+.stakeBtn button.blackBtn {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+.rewardPool {
+    background: #373E5A;
+    box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
+    border-radius: 20px;
+    display: flex;
+    padding: 46px 76px 80px 40px;
+}
+
+.rewardPooImg img {
+    display: block;
+    width: 100%;
+}
+
+.rewardPooImg {
+    max-width: 400px;
+}
+
+.rewardPoolCont {
+    max-width: 440px;
+    margin-right: auto;
+    padding-right: 30px;
+    padding-top: 54px;
+    color: #fff;
+}
+
+.rewardPoolCont p {
+    opacity: .62;
+    font-size: 16px;
+    line-height: 180%;
+    margin-bottom: 20px;
+}
+
+
+section.faqArea {
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.faqContainer> h2 {
+    margin-bottom: 30px;
 }

@@ -979,5 +979,9 @@ margin: 0;
 		display: none;
 	}
 
+	.contactAddresbox, .contactFormBox {
+	    padding: 24px;
+	}
+
 
 }/*(max-width: 575px)*/
