@@ -518,7 +518,7 @@ background: #EFF2F8;
 
 /*Footer Css Start End*/
 
-section.banar_area.home_banar {
+.banar_area {
     position: relative;
     z-index: 1;
 }
@@ -2672,4 +2672,91 @@ section.faqArea {
 
 .faqContainer> h2 {
     margin-bottom: 30px;
+}
+
+/*Index V2 */
+
+.homeBanar2 .banar_content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.homeBanar2 .banar_content h1 {
+    display: block;
+}
+
+.home2Image img {
+    display: block;
+    max-width: 818px;
+    margin: 0 auto;
+    margin-top: -2%;
+}
+
+.home2Image {
+    margin-bottom: 95px;
+}
+
+body.homepage.homeVer2 {
+    background: #F3F4F5;
+}
+
+.nftsFlyCon2 .nftsFlyBox {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
+    border-radius: 20px;
+    color: #0E1220;
+}
+
+.nftsFlyCon2 .nftsFlyBox p {
+    opacity: .8;
+}
+
+.addMoreChainCont2 .addmoreChaBox {
+    padding: 44px 40px 34px 58px;
+}
+
+.apiContainRow.apiContainRow2 .apiCntent {
+    padding-top: 82px;
+}
+
+.apiContainRow.apiContainRow2 .whitBtn {
+    font-weight: 400;
+}
+
+.apiContainRow.apiContainRow2 .apiCntent p {
+    margin-bottom: 25px;
+    max-width: 285px;
+}
+
+.xpNetSecureAreaRow.xpNetSecureAreaRow2 {
+    background: #fff;
+}
+
+.xpNetSecureAreaRow.xpNetSecureAreaRow2 .secCntent {
+    max-width: 380px;
+}
+
+ul.comunityLinks.comunityLinks2 li a img {
+    filter: invert(1) brightness(0);
+}
+
+ul.comunityLinks.comunityLinks2 li a:hover img {
+    filter: unset;
+}
+
+ul.comunityLinks.comunityLinks2 li a {font-weight: 100;background: #FFFFFF;border-radius: 10px;width: 95px;height: 99px;}
+
+section.ourComunityArea.ourComunityArea2 {
+    padding-bottom: 50px;
+}
+
+section.ourComunityArea.ourComunityArea2 .comunityTop {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+ul.comunityLinks.comunityLinks2 {
+    margin: 40px auto 50px;
 }
