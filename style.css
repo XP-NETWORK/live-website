@@ -595,6 +595,10 @@ background: #EFF2F8;
     content: "";
 }
 
+section.crossChainArea.crossChainArea2 .crossChainbox:after {
+    display: none;
+}
+
 .crossChainboxImg {
     position: absolute;
     width: 60%;
