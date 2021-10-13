@@ -589,6 +589,7 @@ background: #EFF2F8;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden;
+    background: #252A3C;
 }
 
 .crossChainbox:after {
@@ -784,7 +785,7 @@ section.addMoreNFTs .row> div {
     border-radius: 20px;
     align-items: flex-start;
     padding: 60px 69px 67px 59px;
-    background: #283953;
+    background: #252A3B;
 }
 
 .apiImg img {
@@ -2729,7 +2730,7 @@ body.homepage.homeVer2 {
 
 .nftsFlyCon2 .nftsFlyBox p {
     opacity: .8;
-    max-width: 312px;
+    max-width: 398px;
 }
 
 .addMoreChainCont2 .addmoreChaBox {
@@ -2737,7 +2738,6 @@ body.homepage.homeVer2 {
 }
 
 .apiContainRow.apiContainRow2 .apiCntent {
-    padding-top: 82px;
     max-width: 393px;
 }
 
@@ -2817,6 +2817,15 @@ ul.comunityLinks.comunityLinks2 {
     letter-spacing: 0;
 }
 
+.blackBtn.whitBorbtn:hover {
+    background: #fff;
+    color: #0E1220;
+}
+
+.blackBtn.whitBorbtn:hover img {
+    filter: invert(1);
+}
+
 header#main_header.headerAbsulate {
     position: absolute;
     left: 0;
@@ -2889,11 +2898,12 @@ ul.chainList.chainListBox {
 }
 
 .crossChainCointen.crossChainrightAlighn .cross_contetn {
-    max-width: 540px;
+    width: 540px;
     margin-left: auto;
     padding-right: 25px;
     padding-top: 98px;
     padding-bottom: 148px;
+    max-width: 52%;
 }
 
 .crossChainCointen.crossChainrightAlighn .crossChainboxImg {
@@ -2902,6 +2912,8 @@ ul.chainList.chainListBox {
     top: 0;
     height: 100%;
     width: auto;
+    max-width: 45%;
+    object-fit: contain;
 }
 
 .secImage img {
@@ -2926,6 +2938,7 @@ ul.chainList.chainListBox {
 
 .apiContainRow.apiContainRow3 {
     padding: 53px 50px 53px 40px;
+    align-items: center;
 }
 
 body.homepage.homeV3 .nav_brand a img {

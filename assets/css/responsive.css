@@ -240,7 +240,7 @@
 
 	.main_menu> li.have_drop_menu.active> a, 
 	.main_menu> li.have_drop_menu.active> a:after {
-		color: #3D63F3;
+   		color: #3D63F3 !important;
 	}
 
 	.whitePaperSidbar {
@@ -423,7 +423,7 @@
 	}
 
 	.apiContainRow {
-		background: #373E5A;
+		background: #252A3B;
 	}
 
 	.secImg {
@@ -537,9 +537,69 @@
 		display: none;
 	}
 
-
 	.nftsFlyBox {
 		padding-bottom: 90vw;
+	}
+
+	.home_banar3 .banar_content p {
+	    font-size: 16px;
+	}
+
+	section.banar_area.home_banar3 {
+	    background-image: url(../img/home3/homeBanarmobile.png) !important;
+	}
+
+	.home_banar3 .banar_content {
+	    padding: 171px 0 230px;
+	}
+
+	ul.chainList.chainListBox {
+	    margin: 20px 0;
+	}
+
+	ul.chainList.chainListBox li {
+	    width: 20%;
+	}
+
+	ul.chainList.chainListBox li:nth-child(22), ul.chainList.chainListBox li:nth-child(21) {
+	    display: none;
+	}
+
+	.chainList.chainListBox .crossIcons img {
+	    transform: unset;
+	}
+
+	.crossChainCointen.crossChainrightAlighn .cross_contetn {
+		padding: 40px 24px 0px 24px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.crossChainCointen.crossChainrightAlighn .crossChainboxImg {
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	.nftsFlyCon2 .nftsFlyBox p, .addmoreChaBox p {
+		font-size: 15px;
+	}
+
+	.apiContainRow.apiContainRow3 {
+		padding: 43px 10px 10px 10px;
+	}
+
+	.apiContainRow.apiContainRow3 .apiCntent {
+		padding: 0 14px 35px 14px;
+	}
+
+	.apiContainRow.apiContainRow2 .apiCntent p {
+		font-size: 15px;
+		margin-bottom: 23px;
+	}
+
+	.blackBtn.whitBorbtn {
+		font-size: 15px;
 	}
 
 
@@ -606,6 +666,8 @@ margin: 0;
 	.comunityLinks li {
 	    padding: 0 5px;
 	    margin: 0 !important;
+	    width: 25%;
+	    flex-shrink: 0;
 	}
 
 	.comunityLinks li:last-child {
@@ -754,7 +816,6 @@ margin: 0;
 	}
 
 	.cross_contetn p {
-	    padding-right: 10px;
 	    font-size: 15px;
 	    line-height: 180%;
 	}
@@ -982,6 +1043,31 @@ margin: 0;
 
 	.contactAddresbox, .contactFormBox {
 	    padding: 24px;
+	}
+
+	.footer_top .row> .col {
+	    width: 50% !important;
+	    flex-basis: 50% !important;
+	}
+
+	ul.comunityLinks.comunityLinks2 li a {
+		max-width: 77.95px;
+		height: 81.23px;
+		align-items: center;
+		justify-content: center;
+		width: 100% !important;
+	}
+
+	ul.comunityLinks.comunityLinks2 {
+		margin: 40px auto 25px;
+	}
+
+	section.ourComunityArea.ourComunityArea2 {
+		padding-bottom: 30px;
+	}
+
+	.quick_links li a {
+		font-size: 14px !important;
 	}
 
 
