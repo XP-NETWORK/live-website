@@ -80,12 +80,12 @@ h2 {
 
 .blackBtn {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 126%;
     letter-spacing: 0.03em;
     color: rgb(255 255 255 / 90%);
     display: inline-block;
-    padding: 9px 15px;
+    padding: 12px 15px;
     border-radius: 6px;
     background: #0E1220;
 }
@@ -254,7 +254,7 @@ header#main_header {
 }
 
 .main_menu_area {
-    padding: 6px 0 0px;
+    padding: 22px 0 16px;
 }
 
 .main_menu li a {
@@ -1790,19 +1790,13 @@ input.invali_inp+span.invalid_text {
 }
 
 .roadmap_banar_area {
-    background: no-repeat scroll center / cover;
-    padding: 120px 0 94px;
+    padding: 110px 0 77px;
 }
 
 .roadBanarCont p {
-    background: #3D59C8;
-    border-radius: 10px;
-    display: table;
-    margin: 0 auto;
-    padding: 24px 34px;
-    margin-top: 30px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 180%;
+    margin-bottom: 46px;
 }
 
 section.roadmaps_area {
@@ -1813,7 +1807,7 @@ section.roadmaps_area {
 .sin_map_box {
     background: #FFFFFF;
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
     margin-bottom: 30px;
     min-height: 340px;
     position: relative;
@@ -1824,21 +1818,34 @@ section.roadmaps_area .container {
 }
 
 .roadmap_list {
-    padding: 0 62px;
+    padding: 0 57px;
     position: relative;
     margin: 0 15px;
 }
 
 .sin_map_cont h4 {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 126%;
+    
 /* identical to box height, or 23px */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    color: #3D63F3;
-    margin-bottom: 10px;
+    
+display: flex;
+    
+align-items: center;
+    
+letter-spacing: 0.02em;
+    
+font-weight: 800;
+    
+font-size: 28px;
+    
+line-height: 106%;
+    
+color: #6C6F83;
+    
+border-bottom: 1px solid #000000;
+    
+margin-bottom: 30px;
+    
+padding-bottom: 20px;
 }
 
 .sin_map_cont ul {
@@ -1855,52 +1862,68 @@ section.roadmaps_area .container {
 
 .sin_map_box:before {
     position: absolute;
-    left: -60px;
-    width: 4px;
+    left: -57px;
+    width: 2px;
     border-radius: 10px;
     background: #E1E7F1;
     content: "";
     height: 116%;
     bottom: 50%;
+    top: 13px;
+    height: auto;
+    bottom: -50px;
+}
+
+.sin_map_box:last-child:before {
+    bottom: auto;
 }
 
 .sin_map_box:after {
     content: "";
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #E1E7F1;
     display: block;
     position: absolute;
-    left: -70px;
-    z-index: 2;
-    bottom: 50%;
+    left: -66px;
     margin-bottom: 0;
+    bottom: auto;
+    top: 10px;
+    z-index: 2;
 }
 
 .sin_map_box:first-child:before {
-    height: 50%;
 }
 
 .sin_map_box.activeLine:before {background: #5874E0;}
 
 .sin_map_box.activeLine:after {
     background: #5874E0;
+    background-image: url(assets/img/icons/checkWhite.svg) !important;
+    background-size: 9px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.sin_map_box.activeLine.currentLine::after {
+    background-image: none !important;
 }
 
 .sin_map_box.activeLine.currentLine .sin_map_cont:after {
     position: absolute;
-    background: #3D63F3;
     opacity: 0.2;
     width: 50px;
     height: 50px;
     content: "";
     display: block;
     border-radius: 50%;
-    bottom: 50%;
-    left: -83px;
+    bottom: auto;
+    left: -81px;
     margin-bottom: -13px;
     z-index: 3;
+    top: -5px;
+    background: #3D63F3;
 }
 
 section.team_banar_area {
@@ -2080,7 +2103,7 @@ a.ligBluBtn:hover {
     background: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(13, 19, 34, 0.1);
     border-radius: 10px;
-    padding: 16px 0 22px;
+    padding: 0px 0 22px;
     max-height: calc(100vh - 20px);
     overflow: auto;
 }
@@ -2146,6 +2169,10 @@ ul.whitePagMenuList> li.haveDrop> a:after {
     position: absolute;
     right: 15px;
     transition: .2s ease all;
+}
+
+ul.whitePagMenuList a.active::after {
+    transform: rotate(180deg);
 }
 
 .subBriCont {
@@ -2235,10 +2262,11 @@ section.whitepaperContainer {
     font-weight: bold;
     font-size: 16px;
     line-height: 160%;
+    margin-top: 25px;
 }
 
 .whiteContents {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .imageTag {
@@ -2255,7 +2283,7 @@ section.whitepaperContainer {
 }
 
 .whiteContents> ul {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -2830,7 +2858,7 @@ header#main_header.headerAbsulate {
     position: absolute;
     left: 0;
     width: 100%;
-    top: 0;
+    top: 0px;
 }
 
 header#main_header.headerAbsulate .main_menu_area {
@@ -2971,4 +2999,39 @@ body.homepage.homeV3 .nav_brand a img {
 
 .homeV3 .menu_triger.active {
     color: #3D63F3;
+}
+
+.roadBanarBox {
+    display: flex;
+}
+
+.roadBanarCont {
+    max-width: 470px;
+}
+
+.roadBanarCont h1 {
+    margin-bottom: 25px;
+    font-size: 52px;
+    line-height: 130%;
+}
+
+.roadBanarBox> img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.roadMapPage {
+    margin-top: 60px;
+    padding-top: 53px !important;
+    padding-bottom: 33px !important;
+    background: #FAFAFA;
+}
+
+.sin_map_box.activeLine .sin_map_cont h4 {
+    color: #0E1220;
+}
+
+.sin_map_box.activeLine.currentLine .sin_map_cont h4 {
+    color: #2853EB;
 }

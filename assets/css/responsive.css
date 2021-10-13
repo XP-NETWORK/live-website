@@ -112,7 +112,7 @@
 	}
 
 	h1 {
-	    font-size: 42px;
+	    font-size: 42px !important;
 	}
 	
 	.subt,
@@ -512,11 +512,35 @@
 	    left: -42px;
 	    width: 36px;
 	    height: 36px;
-	    margin-bottom: -8px;
+	    top: 2px;
 	}
 
 	.sin_map_box {
 	    padding: 30px 24px;
+	}
+
+	.roadBanarBox {
+		flex-direction: column;
+	}
+
+	.roadBanarBox> img {
+		max-width: 100%;
+		animation: auto;
+		margin-top: 30px;
+	}
+
+	.roadBanarCont {
+		max-width: 100%;
+	}
+
+	.roadBanarCont h1 {
+		margin-bottom: 25px;
+	}
+
+	.sin_map_cont h4 {
+		font-size: 22px;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
 	}
 
 	.sin_map_cont ul li {
@@ -525,8 +549,8 @@
 	}
 
 	.roadBanarCont p {
-	    line-height: 130%;
-	    padding: 24px 14px;
+	    font-size: 15px;
+	    margin-bottom: 26px;
 	}
 
 	section.roadmap_banar_area {
@@ -628,7 +652,7 @@
 	}
 
 	h1 {
-	    font-size: 28px;
+	    font-size: 28px !important;
 	    line-height: 140%;
 	}
 
@@ -703,6 +727,7 @@ margin: 0;
 
 	.blackBtn {
 		padding: 8px 12px;
+		font-size: 15px;
 	}
 
 	.homeBanarImg {
