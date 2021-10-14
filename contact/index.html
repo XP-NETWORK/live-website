@@ -193,8 +193,8 @@
         <h5 class="modal-title" id="nofityModalLabel">Stay tuned</h5>
         <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
       </div>
-
-      <div class="notifyForm">
+      <div class="notifyForm application_container">
+        <p></p>
          <form id="form" name="form">
             <div class="row">
                <div class="col-md-12">
@@ -245,7 +245,8 @@
             <h5 class="modal-title" id="connectModalLabel">Big launching October 31st <span>Subsribe to stay tuned!</span></h5>
             <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
           </div>
-          <div class="notifyForm">
+          <div class="connectForm application_container">
+            <p></p>
              <form id="Connectform" name="form">
                 <div class="row">
                    <div class="col-md-12">
@@ -284,7 +285,6 @@
     </div>
   </div>
 </div>
-
   <!--  JavaScript -->
   <!-- JQuery -->
   <script src="../assets/js/jquery-3.3.1.min.js"></script>
@@ -412,7 +412,7 @@
 
                          document.querySelector(".application_container"). innerHTML = `
                          <div class="tnx-container">
-                          <img src="/../assets/img/thankyouimage.svg"/>
+                          <span class="thanksImage"></span>
                           <div class="tnx-h1">Thank You!</div>
                              <div style="text-align:center;">We received your application <br>and will contact you soon</div>
                          </div>`

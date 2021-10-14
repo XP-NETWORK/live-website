@@ -81,7 +81,7 @@ $(document).ready(function(){
 
                        document.querySelector(".application_container"). innerHTML = `
                        <div class="tnx-container">
-                        <img src="/../assets/img/thankyouimage.svg"/>
+                        <span class="thanksImage"></span>
                         <div class="tnx-h1">Thank You!</div>
                            <div style="text-align:center;">We received your application <br>and will contact you soon</div>
                        </div>`;
