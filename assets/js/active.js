@@ -113,11 +113,52 @@ $(document).ready(function(){
       var company_name = jQuery("#Connectform #company_name").val();
       /*var firstame = jQuery("#Connectform #first_name").val();*/
 
-      if(first_name!="" && last_name!="" && yourEmail!="" && aboutme!=""){
-        
+      if(firstame!="" && last_name!="" && yourEmail!="" && company_name!=""){
+        $.ajax({
+                 url: "https://api.xp.network/contact",
+                 type: "post",
+                 data: {
+                     'firstName': first_name,
+                     'lastName': last_name,
+                     'email': yourEmail,
+                     'companyName': company_name
+                 },
+                 success: function(response) {
+                    if(response.ok === true) {
+                      //jQuery(".notifyForm .submit_job .submitBtn").attr("disabled","disabled");
+                       document.querySelector(".application_container p").remove();
+                       //document.getElementById(".notifyForm #form").remove();
+
+                       document.querySelector(".application_container"). innerHTML = `
+                       <div class="tnx-container">
+                        <span class="thanksImage"></span>
+                        <div class="tnx-h1">Thank You!</div>
+                           <div style="text-align:center;">We received your application <br>and will contact you soon</div>
+                       </div>`;
+                    }
+                 }
+             });
       }
       else{
+          if( !isValidEmail(yourEmail) ) { 
 
+            jQuery("#Connectform #yourEmail").next().next().css("visibility","visible");
+            jQuery("#Connectform #yourEmail").next().next().css("opacity",1);
+            jQuery("#Connectform #yourEmail").addClass("invali_inp_email");
+            jQuery("#Connectform #yourEmail").next().hide();
+            //jQuery("#yourEmail").removeClass("invali_inp");
+
+          }
+          jQuery("#Connectform input").each(function(){
+              if(jQuery(this).val()==""){
+                  jQuery(this).next().show();
+                  jQuery(this).addClass("invali_inp");
+              }
+              else{
+                  jQuery(this).next().hide();
+                  jQuery(this).removeClass("invali_inp");
+              }
+          });
       }
 
     });    
