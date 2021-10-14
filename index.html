@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
 
+    <link rel="stylesheet" href="assets/css/jquery.multiselect.css">
     <link rel="stylesheet" href="assets/css/flag-add.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
@@ -40,9 +41,9 @@
 
         gtag('config', 'G-N4CFEFHHPV');
     </script>
-
-
   </head>
+
+
   <body class="homepage homeV3">
 
   <div class="wraper">
@@ -53,8 +54,9 @@
       <div class="container">
         <div class="banar_content">
           <h1>Tearing Down Walls <br>Between Blockchains</h1>
-          <p>We'll take care of connecting the chains.  <br> No development effort is needed on your side.</p>
-          <a href="#" class="blackBtn whitBorbtn">Connect Bridge <img src="assets/img/icons/right-arrow.svg" alt=""></a>
+          <p>The first chain-agnostic bridge built for NFTs. <br>Works seamlessly with all blockchains.</p>
+          <p>Launching October 31st</p>
+          <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#NotifyModal">Notify Me</a>
       </div>
     </section>
 
@@ -111,7 +113,7 @@
             <div class="nftsFlyCon nftsFlyCon2">
               <div class="nftsFlyBox">
                 <h2>We help your NFTs fly</h2>
-                <p>The first chain-agnostic bridge built for NFTs. Works seamlessly with all blockchains.</p>
+                <p>With XP.network, an NFT minted on one blockchain can be sold and traded on any connected chain, reaching a much wider audience.</p>
                 <img src="assets/img/home3/nfts_img.png" alt="" class="nftsFlyBoxImg deskOnly">
                 <img src="assets/img/home3/nfts_img_2.png" alt="" class="nftsFlyBoxImg mobiOnly">
               </div>
@@ -142,7 +144,7 @@
             <div class="apiCntent">
               <h2>XPNET-JS API</h2>
               <p>Connect the Bridge to your NFT dApp and enjoy the wow effect it will have <br>on your users.</p>
-              <a href="#" class="blackBtn whitBorbtn">Connect Bridge <img src="assets/img/icons/right-arrow.svg" alt=""></a>
+              <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#NotifyModal">Connect Bridge <img src="assets/img/icons/right-arrow.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -160,7 +162,7 @@
                 <li><a href="https://www.reddit.com/user/XP_network/" target="_blank"><img src="assets/img/socialIcons/redit_b.svg"> Reddit</a></li>
                 <li><a href="https://www.linkedin.com/company/xp-network/" target="_blank"><img src="assets/img/socialIcons/linkedIn_b.svg"> Linkedin</a></li>
               </ul>
-              <a href="team/" class="blackTBtn">View all communities <img src="assets/img/icons/blueArrow.svg"></a>
+              <a href="community/" class="blackTBtn">View all communities <img src="assets/img/icons/blueArrow.svg"></a>
             </div>
           </div>
         </div>
@@ -171,20 +173,125 @@
   </div> <!-- /.wraper -->
 
 
-  <!--  JavaScript -->
+<!-- Notify Me -->
+<div class="modal fade" id="NotifyModal" tabindex="-1" aria-labelledby="nofityModalLabel" aria-hidden="true">
+  <div class="modal-dialog notifyModalContent">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nofityModalLabel">Stay tuned</h5>
+        <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
+      </div>
+
+      <div class="notifyForm">
+         <form id="form" name="form">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input type="text" name="firstName" id="first_name" placeholder="First Name*" required> 
+                     <span class="invalid_text">First Name is required</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input class="" type="text" name="lastName" id="last_name" placeholder="Last Name*" required>
+                     <span class="invalid_text">Last Name is required</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
+                     <span class="invalid_text">Email is required</span> 
+                     <span class="invalid_text_email">Invalid email</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input class="" type="text" name="companyName" id="company_name" placeholder="Company name*" required>
+                     <span class="invalid_text">Company name*</span> 
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="submit_job"> <button type="button" class="submitBtn">Submit</button> </div>
+                  <div class="response_message" style="width: 100%;text-align: center;"></div>
+               </div>
+            </div>
+         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Connect Me -->
+<div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
+  <div class="modal-dialog connectModalCont">
+    <div class="modal-content">
+      <div class="connModBanr">
+        <img src="assets/img/date.png" alt="">
+      </div>
+      <div class="modalContentInner">
+          <div class="modal-header">
+            <h5 class="modal-title" id="connectModalLabel">Big launching October 31st <span>Subsribe to stay tuned!</span></h5>
+            <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
+          </div>
+          <div class="notifyForm">
+             <form id="Connectform" name="form">
+                <div class="row">
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input type="text" name="firstName" id="first_name" placeholder="First Name*" required> 
+                         <span class="invalid_text">First Name is required</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input class="" type="text" name="lastName" id="last_name" placeholder="Last Name*" required>
+                         <span class="invalid_text">Last Name is required</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
+                         <span class="invalid_text">Email is required</span> 
+                         <span class="invalid_text_email">Invalid email</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input class="" type="text" name="companyName" id="company_name" placeholder="Company name*" required>
+                         <span class="invalid_text">Company name*</span> 
+                      </div>
+                   </div>
+                   <div class="col-12">
+                      <div class="submit_job"> <button type="button" class="submitBtn">Submit</button> </div>
+                      <div class="response_message" style="width: 100%;text-align: center;"></div>
+                   </div>
+                </div>
+             </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 	<!-- JQuery -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<!-- BootStart Poper -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<!-- OwlCarosel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
 
   <script src="header.js"></script>
   <script src="footer.js"></script>
+  
+  <script src="assets/js/jquery.multiselect.js"></script>
+  <script src="assets/js/sticky.min.js"></script>
+
+  <!-- Custome -->
+  <script src="assets/js/active.js"></script>
 
   <script src="assets/js/flag-add.js"></script>
-	<!-- Custome -->
-	<script src="assets/js/active.js"></script>
+
+
+  <script> var urls = document.location.origin;</script>
+
 
   </body>
 </html>

@@ -54,7 +54,7 @@
           <div class="roadBanarCont">
             <h1>Rollout Roadmap</h1>
             <p>Follow our journey from inception to launch. Please note that the team reserves the right to make changes to the roadmap if needed. </p>
-            <a href="#" class="blackBtn blackBorBtn">Connect Bridge <img src="../assets/img/icons/backArrow.svg" alt=""></a>
+            <a href="#" class="blackBtn blackBorBtn" data-bs-toggle="modal" data-bs-target="#NotifyModal">Connect Bridge <img src="../assets/img/icons/backArrow.svg" alt=""></a>
           </div>
           <img src="../assets/img/roadmap.svg" alt="Roadmap">
         </div>
@@ -166,6 +166,107 @@
     <footer class="footer_area" id="siteFooter"></footer>
     
   </div> <!-- /.wraper -->
+
+
+<!-- Notify Me -->
+<div class="modal fade" id="NotifyModal" tabindex="-1" aria-labelledby="nofityModalLabel" aria-hidden="true">
+  <div class="modal-dialog notifyModalContent">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nofityModalLabel">Stay tuned</h5>
+        <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
+      </div>
+
+      <div class="notifyForm">
+         <form id="form" name="form">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input type="text" name="firstName" id="first_name" placeholder="First Name*" required> 
+                     <span class="invalid_text">First Name is required</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input class="" type="text" name="lastName" id="last_name" placeholder="Last Name*" required>
+                     <span class="invalid_text">Last Name is required</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
+                     <span class="invalid_text">Email is required</span> 
+                     <span class="invalid_text_email">Invalid email</span> 
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="inputs"> 
+                     <input class="" type="text" name="companyName" id="company_name" placeholder="Company name*" required>
+                     <span class="invalid_text">Company name*</span> 
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="submit_job"> <button type="button" class="submitBtn">Submit</button> </div>
+                  <div class="response_message" style="width: 100%;text-align: center;"></div>
+               </div>
+            </div>
+         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Connect Me -->
+<div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
+  <div class="modal-dialog connectModalCont">
+    <div class="modal-content">
+      <div class="connModBanr">
+        <img src="../assets/img/date.png" alt="">
+      </div>
+      <div class="modalContentInner">
+          <div class="modal-header">
+            <h5 class="modal-title" id="connectModalLabel">Big launching October 31st <span>Subsribe to stay tuned!</span></h5>
+            <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
+          </div>
+          <div class="notifyForm">
+             <form id="Connectform" name="form">
+                <div class="row">
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input type="text" name="firstName" id="first_name" placeholder="First Name*" required> 
+                         <span class="invalid_text">First Name is required</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input class="" type="text" name="lastName" id="last_name" placeholder="Last Name*" required>
+                         <span class="invalid_text">Last Name is required</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
+                         <span class="invalid_text">Email is required</span> 
+                         <span class="invalid_text_email">Invalid email</span> 
+                      </div>
+                   </div>
+                   <div class="col-md-12">
+                      <div class="inputs"> 
+                         <input class="" type="text" name="companyName" id="company_name" placeholder="Company name*" required>
+                         <span class="invalid_text">Company name*</span> 
+                      </div>
+                   </div>
+                   <div class="col-12">
+                      <div class="submit_job"> <button type="button" class="submitBtn">Submit</button> </div>
+                      <div class="response_message" style="width: 100%;text-align: center;"></div>
+                   </div>
+                </div>
+             </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!--  JavaScript -->
