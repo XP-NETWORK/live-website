@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-N4CFEFHHPV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N4CFEFHHPV');
+    </script>
     <title>Tearing Down Walls Between Blockchains - XP.network (XPNET)</title>
 
     <!-- meta tags -->
@@ -9,10 +17,12 @@
     <meta name=author content="Tearing down walls between blockchains">
     <meta name="description" content="Out-of-the-box multichain support for minted NFTs: connect to XP.network bridge to move NFTs and funds seamlessly across 10+ blockchains">
     <meta name="twitter:image:src" content="/metaimg.jpeg">
+    <meta name="twitter:card" content="summary" />
     <meta content="Tearing down walls between blockchains" property="twitter:title">
+    <meta property="og:image" content="/metaimg.jpeg" />
     <meta content="Out-of-the-box multichain support for minted NFTs: connect to XP.network bridge to move NFTs and funds seamlessly across 10+ blockchains" property="twitter:description">
     <meta content="summary_large_image" name="twitter:card">
-
+    <meta name="twitter:image" content="/metaimg.jpeg">
     <link rel="icon" href="assets/img/fav-icon.png" type="image/gif" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +66,7 @@
           <h1>Tearing Down Walls <br>Between Blockchains</h1>
           <p>The first chain-agnostic bridge built for NFTs. <br>Works seamlessly with all blockchains.</p>
           <p>Launching October 31st</p>
-          <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#NotifyModal">Notify Me</a>
+          <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#connectModal">Notify Me</a>
       </div>
     </section>
 
@@ -84,7 +94,7 @@
           <li class="singleChain"><div class="crossIcons"><img src="assets/img/chainIcons/chain_19.svg" alt=""></div></li>
           <li class="singleChain"><div class="crossIcons"><img src="assets/img/chainIcons/chain_20.svg" alt=""></div></li>
           <li class="singleChain"><div class="crossIcons"><img src="assets/img/chainIcons/chain_21.svg" alt=""></div></li>
-          <li class="singleChain"><div class="crossIcons"><img src="assets/img/chainIcons/chain_9.svg" alt=""></div></li>
+          <li class="singleChain"><div class="crossIcons"><img src="assets/img/chainIcons/celo-celo-logo.svg" alt=""></div></li>
         </ul>
       </div>
     </section>
@@ -144,7 +154,7 @@
             <div class="apiCntent">
               <h2>XPNET-JS API</h2>
               <p>Connect the Bridge to your NFT dApp and enjoy the wow effect it will have <br>on your users.</p>
-              <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#NotifyModal">Connect Bridge <img src="assets/img/icons/right-arrow.svg" alt=""></a>
+              <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#connectModal">Connect Bridge <img src="assets/img/icons/right-arrow.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -181,7 +191,7 @@
         <h5 class="modal-title" id="nofityModalLabel">Stay tuned</h5>
         <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
       </div>
-      <div class="notifyForm application_container">
+      <!-- <div class="notifyForm application_container">
         <p></p>
          <form id="form" name="form">
             <div class="row">
@@ -216,7 +226,7 @@
                </div>
             </div>
          </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
@@ -230,7 +240,7 @@
       </div>
       <div class="modalContentInner">
           <div class="modal-header">
-            <h5 class="modal-title" id="connectModalLabel">Big launching October 31st <span>Subsribe to stay tuned!</span></h5>
+            <h5 class="modal-title" id="connectModalLabel">Launching October 31st<span>Get notified on the first NFT multi-chain mainnet bridge</span></h5>
             <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
           </div>
           <div class="connectForm application_container">
@@ -253,7 +263,6 @@
                       <div class="inputs"> 
                          <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
                          <span class="invalid_text">Email is required</span> 
-                         <span class="invalid_text_email">Invalid email</span> 
                       </div>
                    </div>
                    <div class="col-md-12">
