@@ -931,6 +931,10 @@ margin: 0;
    
 @media only screen and (max-width: 575px) {
 
+	.joinTemMdal.modal-dialog .modal-content {
+	    padding: 24px 24px 48px 24px;
+	}
+
 	.main_menu_area {
 	    padding: 23px 0 9px 3px;
 	}

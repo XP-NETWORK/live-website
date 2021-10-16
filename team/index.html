@@ -61,7 +61,7 @@
         <div class="teamBanarCont text-white ">
           <h1>Meet the XP.Network <br>team</h1>
           <p>Meet the visionary leaders, experts, and professionals <br>behind the first blockchain-agnostic NFT ecosystem</p>
-          <a style="opacity: 0.6; pointer-events: none;" href="#" class="blackBtn whitBorbtn ">Join our team<img src="../assets/img/icons/right-arrow.svg"></a>
+          <a href="javescript:void(0)" class="blackBtn whitBorbtn" data-bs-toggle="modal" data-bs-target="#joinOurTeam">Join our team<img src="../assets/img/icons/right-arrow.svg"></a>
           <img src="../assets/img/team/team_banar.png" alt="" class="teamBanrImg deskOnly">
           <img src="../assets/img/team/team_banar_mob.png" alt="" class="teamBanrmob mobiOnly">
         </div>
@@ -373,6 +373,67 @@
   </div>
 </div>
 
+
+<!-- Join Our Team Modal -->
+<div class="modal fade" id="joinOurTeam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="joinTemMdal modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Join Our Team</h5>
+        <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
+      </div>
+      <div class="modal-body application_container">
+          <p></p>
+          <form id="form" name="form" id="ambassForm">
+              <div class="row">
+                 <div class="col-md-6">
+                    <div class="inputs"> 
+                       <input type="text" name="firstName" id="first_name" placeholder="First Name*" required> 
+                       <span class="invalid_text">First Name is required</span> 
+                    </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="inputs"> 
+                       <input class="" type="text" name="lastName" id="last_name" placeholder="Last Name*" required>
+                       <span class="invalid_text">Last Name is required</span> 
+                    </div>
+                 </div>
+                 <div class="col-md-12">
+                    <div class="inputs"> 
+                       <input type="email" name="email" id="yourEmail" placeholder="Email*" required>
+                       <span class="invalid_text">Email is required</span> 
+                    </div>
+                 </div>
+                 <div class="col-md-12">
+                    <div class="inputs">
+                      <select name="selectCountry" id="selectCountry">
+                        <option value="Select Country*">Select Country*</option>
+                        <option value="USA">USA</option>
+                        <option value="China">China</option>
+                      </select>
+                      <span class="invalid_text">Select Country</span> 
+                    </div>
+                 </div>
+                 <div class="col-md-12">
+                    <div class="inputs attahResu"> 
+                       <input type="file" id="attatchResume">
+                       <label for="attatchResume"> Attach Resume / CV <img src="../assets/img/icons/close_black.svg"> </label>
+                       <span class="invalid_text">Attach Resume</span> 
+                    </div>
+                 </div>
+                 <div class="col-12">
+                    <div class="submit_job"> <button type="submit" class="button job_apply_btns">Apply <img src="../assets/img/icons/whiteArrow.svg" alt=""></button> </div>
+                    <div class="response_message" style="width: 100%;text-align: center;"></div>
+                 </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!--  JavaScript -->
   <!-- JQuery -->
   <script src="../assets/js/jquery-3.3.1.min.js"></script>
@@ -388,6 +449,185 @@
   <script src="../assets/js/flag-add.js"></script>
   <!-- Custome -->
   <script src="../assets/js/active.js"></script>
+
+  <script>
+     $('#langOpt').multiselect({
+         columns: 1,
+         placeholder: 'Select Languages*'
+     });
+     $(document).ready(function(){
+       
+      jQuery(document).on("blur","#form input",function(){
+        if(jQuery(this).val()==""){
+            jQuery(this).next().show();
+            jQuery(this).addClass("invali_inp");
+        }
+        else{
+            jQuery(this).next().hide();
+            jQuery(this).removeClass("invali_inp");
+        }
+        /*jQuery("#form input").each(function(){
+            
+        });*/
+      });
+      jQuery(document).on("blur",".ms-options li input[type=checkbox]",function(){
+        if(jQuery(this).val()!=""){
+            jQuery(".ms-options-wrap").next('span').css("opacity",0);
+            jQuery(".ms-options-wrap").next('span').css("visibility","hidden");
+            jQuery(".ms-options-wrap").removeClass("invali_inp");
+        }
+        else{
+            jQuery(".ms-options-wrap").next('span').css("opacity",1);
+            jQuery(".ms-options-wrap").next('span').css("visibility","visible");
+            jQuery(".ms-options-wrap").addClass("invali_inp");
+        }
+      });
+      jQuery(document).on("blur","#form #additionalComent",function(){
+        if(jQuery("#additionalComent").val()==""){
+             jQuery("#additionalComent").next('span').css("opacity",1);
+             jQuery("#additionalComent").next('span').css("visibility","visible");
+             jQuery("#additionalComent").addClass("invali_inp");
+        }
+        else{
+             jQuery("#additionalComent").next('span').css("opacity",0);
+             jQuery("#additionalComent").next('span').css("visibility","hidden");
+             jQuery("#additionalComent").removeClass("invali_inp");
+        }
+      });  
+      $(document).on("click",".send_profile_mail .sendBtn",function(event){
+          event.preventDefault();
+          var email = jQuery("#sendMail").val();
+          if(email!=""){
+            $.ajax({
+                 url: "https://api.xp.network/ambassador",
+                 type: "post",
+                 data: {
+                     'message': email
+                 },
+                 success: function(response) {
+                  alert("sent mail");
+                 }
+             });
+          }
+          else{
+            alert("fill field mail");
+          }
+      });
+       $(document).on("click",".job_apply_btns",function(event){
+          event.preventDefault();
+           jQuery(".response_message").html('');
+           var first_name  = jQuery("#first_name").val();
+           var last_name  = jQuery("#last_name").val();
+           var yourEmail  = jQuery("#yourEmail").val();
+           var aboutme = jQuery("#additionalComent").val();
+           var telegram_txt = jQuery("#telegram_link").val();
+           var language_multi = new Array();
+           
+           jQuery(".ms-options li input[type=checkbox]:checked").each(function(){
+               
+               language_multi.push(jQuery(this).val());
+     
+           });
+           
+       
+           if(first_name!="" && last_name!="" && yourEmail!="" && language_multi!="" &&telegram_txt!=""){
+             if( !isValidEmail(yourEmail) ) { 
+               jQuery("#yourEmail").next().next().css("visibility","visible");
+               jQuery("#yourEmail").next().next().css("opacity",1);
+               jQuery("#yourEmail").addClass("invali_inp_email");
+               jQuery("#yourEmail").next().hide();
+               //jQuery("#yourEmail").removeClass("invali_inp");
+             }
+             else{
+              jQuery("#yourEmail").next().next().css("visibility","visible");
+               jQuery("#yourEmail").next().next().css("opacity",0);
+              jQuery("#yourEmail").removeClass("invali_inp_email");
+              jQuery("#yourEmail").removeClass("invali_inp");
+              $.ajax({
+                   url: "https://api.xp.network/ambassador",
+                   type: "post",
+                   data: {
+                       'firstName': first_name,
+                       'lastName': last_name,
+                       'email': yourEmail,
+                       'languages': language_multi,
+                       'telegram':telegram_txt,
+                       'aboutMe': aboutme
+                   },
+                   success: function(response) {
+                      if(response.ok === true) {
+                        jQuery(".job_apply_btns").attr("disabled","disabled");
+                         document.querySelector(".application_container p").remove();
+                         document.getElementById("form").remove();
+
+                         document.querySelector(".application_container"). innerHTML = `
+                         <div class="tnx-container">
+                          <span class="thanksImage"></span>
+                          <div class="tnx-h1">Thank You!</div>
+                             <div style="text-align:center;">We received your application <br>and will contact you soon</div>
+                         </div>`;
+                      }
+                   }
+               });
+             }
+           }
+           else{
+            if(yourEmail!=""){
+              if( !isValidEmail(yourEmail) ) { 
+                 jQuery("#yourEmail").next().next().css("visibility","visible");
+                 jQuery("#yourEmail").next().next().css("opacity",1);
+                 //jQuery("#yourEmail").next();
+                 jQuery("#yourEmail").next().hide();
+                 jQuery("#yourEmail").addClass("invali_inp_email");
+               }
+               else{
+                jQuery("#yourEmail").next().next().css("visibility","visible");
+                 jQuery("#yourEmail").next().next().css("opacity",0);
+                jQuery("#yourEmail").removeClass("invali_inp_email");
+                jQuery("#yourEmail").removeClass("invali_inp");
+              }
+            }
+            
+
+             if(jQuery("#additionalComent").val()==""){
+                   jQuery("#additionalComent").next('span').css("opacity",1);
+                   jQuery("#additionalComent").next('span').css("visibility","visible");
+                   jQuery("#additionalComent").addClass("invali_inp");
+              }
+              else{
+                   jQuery("#additionalComent").next('span').css("opacity",0);
+                   jQuery("#additionalComent").next('span').css("visibility","hidden");
+                   jQuery("#additionalComent").removeClass("invali_inp");
+              }
+              if(jQuery(".ms-options li input[type=checkbox]:checked").length>0){
+                  jQuery(".ms-options-wrap").next('span').css("opacity",0);
+                  jQuery(".ms-options-wrap").next('span').css("visibility","hidden");
+                  jQuery(".ms-options-wrap").removeClass("invali_inp");
+              }
+              else{
+                  jQuery(".ms-options-wrap").next('span').css("opacity",1);
+                  jQuery(".ms-options-wrap").next('span').css("visibility","visible");
+                  jQuery(".ms-options-wrap").addClass("invali_inp");
+              }
+              jQuery("#form input").each(function(){
+                  if(jQuery(this).val()==""){
+                      jQuery(this).next().show();
+                      jQuery(this).addClass("invali_inp");
+                  }
+                  else{
+                      jQuery(this).next().hide();
+                      jQuery(this).removeClass("invali_inp");
+                  }
+              });
+           }
+         });
+     });
+     
+     function isValidEmail(emailText) {
+         var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+         return pattern.test(emailText);
+     };
+  </script>
 
 
   </body>
