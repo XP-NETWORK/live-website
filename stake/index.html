@@ -39,7 +39,11 @@
 
         gtag('config', 'G-N4CFEFHHPV');
     </script>
-
+    <style type="text/css">
+      select#xp_type_selection {
+    pointer-events: none;
+}
+    </style>
   </head>
   <body>
 
@@ -50,8 +54,9 @@
     <section class="stakeContainer">
       <div class="container">
         <div class="stakeBanar text-center">
-          <h1>XPNET Staking bla bla</h1>
-          <p class="subt">You can earn passive income by participating in the XPNET using delegation.</p>
+          <h1>XPNET Staking Rewards</h1>
+          <p class="subt">Delegate XPNET to validators to earn rewards
+          and mint a chain-agnostic NFT for free.</p>
           <div class="btns_box">
             <a href="#" class="blackBtn">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></a>
             <a href="#" class="blackBtn blackBorBtn">Claim XPNET <img src="../assets/img/icons/backArrow.svg" alt=""></a>
@@ -68,52 +73,49 @@
               <h2>Calculate Your Earnings</h2>
               <form action="#" class="calculatFomr" id="earningForm">
                 <div class="singleInp">
-                  <label for="enterValue">
+                  <label for="enterValue" class="enter_current_value">
                     Enter your XPNET Amount <span>$ 0.070</span>
                   </label>
                   <div class="selInpGro">
-                    <input type="number" placeholder="" value="" name="">
-                    <select name="" id="">
-                      <option value="XPNET">XPNET</option>
-                      <option value="XPNET">XPNET</option>
-                      <option value="XPNET">XPNET</option>
-                      <option value="XPNET">XPNET</option>
+                    <input type="number" id="value_full_price" name="xp_full_p" placeholder="MIN staking requirement 1500" value="" name="">
+                    <select name="xp_type_selection" id="xp_type_selection">
+                      <option value="XPNET">XPNET</option>         
                     </select>
                   </div>
                 </div>
                 <div class="selecDurat">
                   <label for="">Select Staking Duration</label>
-                  <div class="durationGroup ">
+                  <div class="durationGroup">
                     <div class="duraSInp">
-                      <input type="radio" name="selectDuration" value="3 months" id="months3">
+                      <input type="radio" name="selectDuration" value="3 months" data-price="0.1125" data-precentage="45" id="months3">
                       <label for="months3">3 months</label>
                     </div>
                     <div class="duraSInp">
-                      <input type="radio" name="selectDuration" value="6 months" id="months6">
+                      <input type="radio" name="selectDuration" value="6 months" data-price="0.375" data-precentage="75" id="months6">
                       <label for="months6">6 months</label>
                     </div>
                     <div class="duraSInp">
-                      <input type="radio" name="selectDuration" value="9 months" id="months9">
+                      <input type="radio" name="selectDuration" value="9 months" data-price="0.75" data-precentage="100" id="months9">
                       <label for="months9">9 months</label>
                     </div>
                     <div class="duraSInp">
-                      <input type="radio" name="selectDuration" value="1 year" id="year1">
+                      <input type="radio" name="selectDuration" value="1 year" data-price="1.25" data-precentage="125" id="year1">
                       <label for="year1">1 year</label>
                     </div>
                   </div>
                 </div>
                 <div class="estEpyInp">
-                  <label for="estEpy">Est. APY <span> 75%</span></label>
+                  <label for="estEpy" class="est_percentage">Est. APY <span> 75%</span></label>
                   <div class="estiReward">
                     <label for="">Estimated Rewards</label>
-                    <div class="reWordValue">
-                      <p>358 XPNET</p>
+                    <div class="reWordValue final_value_eva">
+                      <p class="exp_amount_price">358 XPNET</p>
                       <span>$ 0.070</span>
                     </div>
                   </div>
                 </div>
                 <div class="stakeBtn">
-                  <button class="blackBtn">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></button>
+                  <button type="button" class="blackBtn stak_btn_detail">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></button>
                 </div>
               </form>
             </div>
@@ -124,7 +126,10 @@
               <div class="nftRewarImg">
                 <img src="../assets/img/stake/reward.png" alt="NFT Reward">
               </div>
-              <a href="#" class="blackTBtn">Explore Reward Pool <img src="../assets/img/icons/blueArrow.svg"></a>
+              <p>
+                Get a unique chain-agnostic NFT that serves as the access key to staking rewards.
+              </p>
+              <a href="#" class="blackTBtn" style="display: none;">Explore Reward Pool <img src="../assets/img/icons/blueArrow.svg"></a>
             </div>
           </div>
         </div>
@@ -136,8 +141,8 @@
         <div class="rewardPool">
           <div class="rewardPoolCont">
             <h2>XPNET Reward Pool</h2>
-            <p>For every staking operation XP.network will reward whith a special NFT that they can trade or use them to LOREM Ipsum. Highest LPs during the first month from the Yield farming DApp launch will receive a set of exclusive NFTs.</p>
-            <a href="" class="whitBtn">Explore Reward Pool <img src="../assets/img/icons/right-arrow.svg" alt=""></a>
+            <p>Every staker can mint a unique chain-agnostic NFT  that acts as an access key to claim the rewards. Those who stake most XPNET during the first month after the launch of the staking program will receive NFTs from our exclusive Early Bird set.</p>
+            <a href="https://stake.xp.network" class="blackBtn reward_btn_effect" target="_blank">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></a>
           </div>
           <div class="rewardPooImg">
             <img src="../assets/img/stake/rewardPooImg.png">
@@ -154,60 +159,108 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="head1">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                What is Staking
+                What is XPNET?
               </button>
             </h2>
             <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="head1" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, qui et autem repellat asperiores inventore odio exercitationem accusamus, odit. Similique consequuntur ipsum sequi esse, nihil molestiae asperiores voluptates reprehenderit?
+                XPNET is the native token of XP.network. Its main use is to reward the validators for confirming bridge transactions. It’s also used for staking and to encourage the development of the ecosystem through partnerships, collaborations with advisors, etc. XPNET runs on Binance Smart Chain, which ensures high transaction processing speed and low fees.
+                <br><br>
+XPNET was initially released  to the public during the three parallel IDO and IEO events on BSCPad, Occam.Razer, and Gate.io. The total supply is XXX XPNET.<br><br>
+The smart contract for XPNET is 0x8cf8238abf7b933Bf8BB5Ea2C7E4Be101c11de2A
               </div>
             </div>
           </div> <!-- /.accordion-item -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="head2">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                What is XPNET Token
+                What is staking?
               </button>
             </h2>
             <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, qui et autem repellat asperiores inventore odio exercitationem accusamus, odit. Similique consequuntur ipsum sequi esse, nihil molestiae asperiores voluptates reprehenderit?
+                In very simple words, staking is the process of locking up tokens in order in order to earn rewards.
+By staking XPNET, you help validators secure the network.
+<br><br>
+The XP.network has a number of validator nodes, whose role is to check and confirm transactions. To become a validator, a node operator has to create a stake (deposit) in XPNET which acts as a guarantee that the node won’t act maliciously. In return for their work, validators receive transaction fees. 
+<br><br>
+Users can delegate the validation rights associated with their XPNET tokens to one of the validators and receive a share of the rewards in return. 
               </div>
             </div>
           </div> <!-- /.accordion-item -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="head3">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                Why Stake XPNET
+                Why Stake XPNET?
               </button>
             </h2>
             <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="head3" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, qui et autem repellat asperiores inventore odio exercitationem accusamus, odit. Similique consequuntur ipsum sequi esse, nihil molestiae asperiores voluptates reprehenderit?
+                When you stake XPNET, you receive rewards that come in two forms:<br>
+                1) More XPNET tokens at the end of the staking period. The APY varies from 45% to 125%, respectively.<br>
+                2) A unique chain-agnostic NFT. It allows its holder to withdraw the XPNET rewards, but it also has an artistic value 
+                of its own and can be sold independently.
               </div>
             </div>
           </div> <!-- /.accordion-item -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="head4">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                When can i get Staking Rewards
+                What does NFT-enabled staking mean?
               </button>
             </h2>
             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="head4" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, qui et autem repellat asperiores inventore odio exercitationem accusamus, odit. Similique consequuntur ipsum sequi esse, nihil molestiae asperiores voluptates reprehenderit?
+                XP.network is the first blockchain protocol to reward stakers with NFTs in addition to the regular tokens. When you stake XPNET, you’ll be able to mint a unique chain-agnostic NFT, which acts as an access key to the rewards.<br>
+                Whoever holds the NFT can claim the rewards at the end of the staking period. 
               </div>
             </div>
           </div> <!-- /.accordion-item -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="head5">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                Fee Lorem ipsum
+                Can I sell my XP.network NFT?
               </button>
             </h2>
             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="head5" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam, qui et autem repellat asperiores inventore odio exercitationem accusamus, odit. Similique consequuntur ipsum sequi esse, nihil molestiae asperiores voluptates reprehenderit?
+                You can sell the chain-agnostic NFT at any moment in the secondary market (in a marketplace or directly), but you will lose the right to claim the staking rewards. For this reason, it’s not recommended to sell the NFT until the end of the staking period. You will still be able to withdraw the original XPNET staking deposit, of course, even if you sell the NFT.
+              </div>
+            </div>
+          </div> <!-- /.accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                How much will I earn for staking XPNET?
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="head5" data-bs-parent="#faqContents">
+              <div class="accordion-body">
+                Please use the calculator above to calculate the reward estimate. Keep in mind that token prices are volatile, so there is no way to know the USD value of your rewards in advance. The USD estimate provided by the calculator is based on the current XPNET price and is for information purposes only.
+              </div>
+            </div>
+          </div> <!-- /.accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                When can I get my staking rewards?
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="head6" data-bs-parent="#faqContents">
+              <div class="accordion-body">
+               You will be able to claim the XPNET rewards at the end of the staking period, depending on the duration you chose at the start: 3, 6, 9, or 12 months. You will need to be holding chain-agnostic NFT minted at the beginning of the staking period. If you sell the NFT in the meantime, the claim will pass to the buyer.
+              </div>
+            </div>
+          </div> <!-- /.accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                Do I need XPNET to pay bridging fees?
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="head7" data-bs-parent="#faqContents">
+              <div class="accordion-body">
+                No. One of the biggest advantages of XP.network is that end users can pay the fees in the currency of the origin network. For example, if Bob sends an NFT from Binance Smart Chain to Elrond, he will pay the bridge fee in BNB. These BNB coins are automatically converted in part into EGLD (to pay Elrond’s transaction fee) and in part into XPNET to pay the relay validator. 
               </div>
             </div>
           </div> <!-- /.accordion-item -->
@@ -512,6 +565,74 @@
          var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
          return pattern.test(emailText);
      };
+     $(document).ready(function(){
+      $.get( "https://api.xp.network/xpnet", function( data ) {
+        //$( ".result" ).html( data );
+        //alert( data );
+        console.log(data.price);
+        $("#value_full_price").attr("data-val",data.price);
+      });
+      $(document).on("blur","#value_full_price",function(){
+        var cu_value = jQuery(this).val();
+        //alert(cu_value);
+        jQuery(".enter_current_value span").html('$'+cu_value);
+
+      });
+      $(document).on("click",".durationGroup input[type=radio]",function(){
+        var precent_val = jQuery(this).attr("data-precentage");
+        var duartion_price = jQuery(this).attr("data-price");
+        var input_price = jQuery("#value_full_price").val();
+        var value_api = $("#value_full_price").attr("data-val");
+        var xp_type = $("#xp_type_selection").val();
+        var final_price = input_price*duartion_price*value_api;
+        var final_xp_de = parseFloat(value_api);
+        var final_located = final_price*final_xp_de;
+        jQuery(".est_percentage span").html(precent_val+"%");
+        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+      });
+      $(document).on("keypress","#value_full_price",function(){
+        var precent_val = jQuery(".durationGroup input[type=radio]:checked").attr("data-precentage");
+        var duartion_price = jQuery(".durationGroup input[type=radio]:checked").attr("data-price");
+        var input_price = jQuery(this).val();
+        var value_api = $(this).attr("data-val");
+        var xp_type = $("#xp_type_selection").val();
+        if(duartion_price!=undefined){
+          var final_price = input_price*duartion_price*value_api;  
+        }
+        else{
+          var final_price = input_price*value_api;
+          precent_val =0;
+        }
+        var final_xp_de = parseFloat(value_api);
+        var final_located = final_price*final_xp_de;
+
+        jQuery(".est_percentage span").html(precent_val+"%");
+        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+      });
+      $(document).on("click",".stak_btn_detail",function(event){
+        event.preventDefault();
+        //alert("working");
+        var precent_val = jQuery(".durationGroup input[type=radio]:checked").attr("data-precentage");
+        var duartion_price = jQuery(".durationGroup input[type=radio]:checked").attr("data-price");
+        var input_price = jQuery("#value_full_price").val();
+        var value_api = $("#value_full_price").attr("data-val");
+        var xp_type = $("#xp_type_selection").val();
+        if(duartion_price!=undefined){
+          var final_price = input_price*duartion_price*value_api;  
+        }
+        else{
+          var final_price = input_price*value_api;
+          precent_val =0;
+        }
+        var final_xp_de = parseFloat(value_api);
+        var final_located = final_price*final_xp_de;
+        jQuery(".est_percentage span").html(precent_val+"%");
+        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+      });
+     });
   </script>
 
 

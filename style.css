@@ -3075,11 +3075,19 @@ button.blackBtn {
     display: -ms-flexbox;
     display: flex;
     padding: 46px 76px 80px 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .rewardPooImg img {
     display: block;
-    width: 100%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
 }
 
 .rewardPooImg {
@@ -3103,7 +3111,7 @@ button.blackBtn {
 
 
 section.faqArea {
-    margin-top: 20px;
+    margin-top: 60px;
     padding-bottom: 50px;
 }
 
@@ -3323,6 +3331,7 @@ ul.chainList.chainListBox li {
     -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
             transform: scale(1.3);
+            max-height: 30px;
 }
 
 ul.chainList.chainListBox {
@@ -3684,4 +3693,51 @@ div#NotifyModal .modal-dialog .btnClose {
 
 .joinTemMdal.modal-dialog .modal-body {
     padding: 20px 0 0 0;
+}
+
+div#connectModal{
+    top: 80px;
+}
+
+span.commLinkIcon img {
+    filter: invert(1) brightness(0);
+}
+
+.sinComLink> a:hover span.commLinkIcon img {
+    filter: unset;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .btns_box a {
+        font-size: 13px;
+        padding: 11px;
+    }
+    .duraSInp label {
+        width: 100%;
+        margin: 5px;
+    }
+    .calculateBox label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    color: #0F1223;
+}
+.calculateBox input#value_full_price {
+    width: 100%;
+}
+section.faqArea {
+    margin-top: 60px;
+    padding-bottom: 58px !important;
+}
+}
+.nftRewardBox p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+a.blackBtn.reward_btn_effect:hover {
+    background: #fff;
+    color: #030C21;
 }
