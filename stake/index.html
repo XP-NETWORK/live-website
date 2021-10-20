@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tearing Down Walls Between Blockchains - XP.network (XPNET)</title>
+    <title>XPNET Staking Rewards</title>
     <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name=author content="Tearing down walls between blockchains">
-    <meta name="description" content="Out-of-the-box multichain support for minted NFTs: connect to XP.network bridge to move NFTs and funds seamlessly across 10+ blockchains">
-    <meta name="twitter:image:src" content="/metaimg.jpeg">
-    <meta content="Tearing down walls between blockchains" property="twitter:title">
-    <meta content="Out-of-the-box multichain support for minted NFTs: connect to XP.network bridge to move NFTs and funds seamlessly across 10+ blockchains" property="twitter:description">
+    <meta name=author content="XPNET Staking Rewards">
+    <meta name="description" content="Delegate XPNET to validators to earn rewards and mint a chain-agnostic NFT for free.">
+    <meta name="twitter:image:src" content="/ogimg.png">
+    <meta content="XPNET Staking Rewards" property="twitter:title">
+    <meta content="Delegate XPNET to validators to earn rewards and mint a chain-agnostic NFT for free." property="twitter:description">
     <meta content="summary_large_image" name="twitter:card">
-
+    <meta name="twitter:image:src" content="/ogimg.png">
+    <meta property="og:image" content="/ogimg.png" />
+    <meta name="twitter:image" content="/ogimg.png">
     <link rel="icon" href="../assets/img/fav-icon.png" type="image/gif" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +49,7 @@
   </head>
   <body>
 
-  <div class="wraper">
+  <div class="wraper stakwrap">
 
     <header class="header_area" id="main_header"></header>
 
@@ -55,11 +57,15 @@
       <div class="container">
         <div class="stakeBanar text-center">
           <h1>XPNET Staking Rewards</h1>
-          <p class="subt">Delegate XPNET to validators to earn rewards
+          <p id="subtla" class="subt">Delegate XPNET to validators to earn rewards
           and mint a chain-agnostic NFT for free.</p>
           <div class="btns_box">
-            <a href="#" class="blackBtn">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></a>
-            <a href="#" class="blackBtn blackBorBtn">Claim XPNET <img src="../assets/img/icons/backArrow.svg" alt=""></a>
+            <a onclick="goToStake()" href="#" class="blackBtn">
+              Stake XPNET 
+              <img class="daverarrow" src="../assets/img/icons/right-arrow.svg" alt="">
+              <img class="hoverarrow" src="../assets/img/icons/backArrow.svg" alt="">
+            </a>
+            <a onclick="goToStake()" href="#" class="blackBtn blackBorBtn">Claim XPNET <img src="../assets/img/icons/backArrow.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -77,7 +83,7 @@
                     Enter your XPNET Amount <span>$ 0.070</span>
                   </label>
                   <div class="selInpGro">
-                    <input type="number" id="value_full_price" name="xp_full_p" placeholder="MIN staking requirement 1500" value="" name="">
+                    <input type="number" id="value_full_price" name="xp_full_p" placeholder="Enter amount (minimum 1500 XPNET)" value="" name="">
                     <select name="xp_type_selection" id="xp_type_selection">
                       <option value="XPNET">XPNET</option>         
                     </select>
@@ -115,7 +121,11 @@
                   </div>
                 </div>
                 <div class="stakeBtn">
-                  <button type="button" class="blackBtn stak_btn_detail">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></button>
+                  <button onclick="goToStake()" type="button" class="blackBtn stak_btn_detail">
+                    Stake XPNET 
+                    <img class="daverarrow" src="../assets/img/icons/right-arrow.svg" alt="">
+                    <img class="hoverarrow" src="../assets/img/icons/backArrow.svg" alt="">
+                  </button>
                 </div>
               </form>
             </div>
@@ -142,10 +152,14 @@
           <div class="rewardPoolCont">
             <h2>XPNET Reward Pool</h2>
             <p>Every staker can mint a unique chain-agnostic NFT  that acts as an access key to claim the rewards. Those who stake most XPNET during the first month after the launch of the staking program will receive NFTs from our exclusive Early Bird set.</p>
-            <a href="https://stake.xp.network" class="blackBtn reward_btn_effect" target="_blank">Stake XPNET <img src="../assets/img/icons/right-arrow.svg" alt=""></a>
+            <a href="https://stake.xp.network" class="blackBtn reward_btn_effect" target="_blank">Stake XPNET
+              <img class="daverarrow" src="../assets/img/icons/right-arrow.svg" alt="">
+              <img class="hoverarrow" src="../assets/img/icons/backArrow.svg" alt="">
+              </a>
           </div>
           <div class="rewardPooImg">
-            <img src="../assets/img/stake/rewardPooImg.png">
+            <img class="desktop-img-stake" src="../assets/img/stake/rewardPooImg.png">
+            <img class="mobile-img-stake" src="../assets/img/stake/mobile-staking-img.png">
           </div>
         </div>
       </div>
@@ -164,10 +178,9 @@
             </h2>
             <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="head1" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                XPNET is the native token of XP.network. Its main use is to reward the validators for confirming bridge transactions. It’s also used for staking and to encourage the development of the ecosystem through partnerships, collaborations with advisors, etc. XPNET runs on Binance Smart Chain, which ensures high transaction processing speed and low fees.
-                <br><br>
-XPNET was initially released  to the public during the three parallel IDO and IEO events on BSCPad, Occam.Razer, and Gate.io. The total supply is XXX XPNET.<br><br>
-The smart contract for XPNET is 0x8cf8238abf7b933Bf8BB5Ea2C7E4Be101c11de2A
+                XPNET is the native token of XP.network. Its main use is to reward the validators for confirming bridge transactions. It’s also used for staking and to encourage the development of the ecosystem through partnerships, collaborations with advisors, etc. XPNET runs on Binance Smart Chain, which ensures high transaction processing speed and low fees. <br><br> 
+                XPNET was initially released  to the public during the three parallel IDO and IEO events on BSCPad, Occam.Razer, and Gate.io. The total supply is XXX XPNET.<br><br>
+                The smart contract for XPNET is 0x8cf8238abf7b933Bf8BB5Ea2C7E4Be101c11de2A
               </div>
             </div>
           </div> <!-- /.accordion-item -->
@@ -179,12 +192,7 @@ The smart contract for XPNET is 0x8cf8238abf7b933Bf8BB5Ea2C7E4Be101c11de2A
             </h2>
             <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="#faqContents">
               <div class="accordion-body">
-                In very simple words, staking is the process of locking up tokens in order in order to earn rewards.
-By staking XPNET, you help validators secure the network.
-<br><br>
-The XP.network has a number of validator nodes, whose role is to check and confirm transactions. To become a validator, a node operator has to create a stake (deposit) in XPNET which acts as a guarantee that the node won’t act maliciously. In return for their work, validators receive transaction fees. 
-<br><br>
-Users can delegate the validation rights associated with their XPNET tokens to one of the validators and receive a share of the rewards in return. 
+               It is a blockchain transaction of locking the ERC-20/BEP-20 tokens in order to earn rewards. In other words, we put your tokens in a safety — deposit box and award you every second with a fraction of XPNET. The size of the fraction depends on the period of staking.
               </div>
             </div>
           </div> <!-- /.accordion-item -->
@@ -229,12 +237,12 @@ Users can delegate the validation rights associated with their XPNET tokens to o
             </div>
           </div> <!-- /.accordion-item -->
           <div class="accordion-item">
-            <h2 class="accordion-header" id="head5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            <h2 class="accordion-header" id="head9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
                 How much will I earn for staking XPNET?
               </button>
             </h2>
-            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="head5" data-bs-parent="#faqContents">
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="head9" data-bs-parent="#faqContents">
               <div class="accordion-body">
                 Please use the calculator above to calculate the reward estimate. Keep in mind that token prices are volatile, so there is no way to know the USD value of your rewards in advance. The USD estimate provided by the calculator is based on the current XPNET price and is for information purposes only.
               </div>
@@ -248,7 +256,9 @@ Users can delegate the validation rights associated with their XPNET tokens to o
             </h2>
             <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="head6" data-bs-parent="#faqContents">
               <div class="accordion-body">
-               You will be able to claim the XPNET rewards at the end of the staking period, depending on the duration you chose at the start: 3, 6, 9, or 12 months. You will need to be holding chain-agnostic NFT minted at the beginning of the staking period. If you sell the NFT in the meantime, the claim will pass to the buyer.
+               A staking NFT owner can withdraw the interest every second as it gets awarded, but withdrawing it so frequently can lead to high transaction fees.<br>
+We recommend claiming the XPNET rewards at the end of the staking period or only when necessary.<br>
+You will need to be holding chain-agnostic NFT minted at the beginning of the staking period. If you sell the NFT in the meantime, the claim will pass to the buyer.<br>
               </div>
             </div>
           </div> <!-- /.accordion-item -->
@@ -261,6 +271,20 @@ Users can delegate the validation rights associated with their XPNET tokens to o
             <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="head7" data-bs-parent="#faqContents">
               <div class="accordion-body">
                 No. One of the biggest advantages of XP.network is that end users can pay the fees in the currency of the origin network. For example, if Bob sends an NFT from Binance Smart Chain to Elrond, he will pay the bridge fee in BNB. These BNB coins are automatically converted in part into EGLD (to pay Elrond’s transaction fee) and in part into XPNET to pay the relay validator. 
+              </div>
+            </div>
+          </div> <!-- /.accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                When can I get my stake back?
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="head8" data-bs-parent="#faqContents">
+              <div class="accordion-body">
+                The initial stake can only be withdrawn: <br>
+                1. When the staking period expires <br>
+                2. By the initial staker
               </div>
             </div>
           </div> <!-- /.accordion-item -->
@@ -328,7 +352,7 @@ Users can delegate the validation rights associated with their XPNET tokens to o
       </div>
       <div class="modalContentInner">
           <div class="modal-header">
-            <h5 class="modal-title" id="connectModalLabel">Launching October 31st<span>Get notified on the first NFT multi-chain mainnet bridge</span></h5>
+            <h5 class="modal-title" id="connectModalLabel">Launching on October 31st<span>Get notified when the first multichain NFT bridge goes live</span></h5>
             <button type="button" class="btnClose" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/icons/close_black.svg" alt=""></button>
           </div>
           <div class="connectForm application_container">
@@ -502,7 +526,7 @@ Users can delegate the validation rights associated with their XPNET tokens to o
                          <div class="tnx-container">
                           <span class="thanksImage"></span>
                           <div class="tnx-h1">Thank You!</div>
-                             <div style="text-align:center;">We received your application <br>and will contact you soon</div>
+                             <div style="text-align:center;">Thank you for your interest!<br>We'll be in touch soon</div>
                          </div>`
                       }
                    }
@@ -584,21 +608,23 @@ Users can delegate the validation rights associated with their XPNET tokens to o
         var input_price = jQuery("#value_full_price").val();
         var value_api = $("#value_full_price").attr("data-val");
         var xp_type = $("#xp_type_selection").val();
-        var final_price = input_price*duartion_price*value_api;
+        var final_price = input_price*duartion_price;
         var final_xp_de = parseFloat(value_api);
-        var final_located = final_price*final_xp_de;
+        var final_located = final_price*value_api;
         jQuery(".est_percentage span").html(precent_val+"%");
-        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
-        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+        jQuery(".final_value_eva p").html(final_price.toFixed(2)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(2));
       });
-      $(document).on("keypress","#value_full_price",function(){
+      $(document).on("input","#value_full_price",function(){
         var precent_val = jQuery(".durationGroup input[type=radio]:checked").attr("data-precentage");
         var duartion_price = jQuery(".durationGroup input[type=radio]:checked").attr("data-price");
         var input_price = jQuery(this).val();
         var value_api = $(this).attr("data-val");
         var xp_type = $("#xp_type_selection").val();
+        console.log(input_price, value_api)
+
         if(duartion_price!=undefined){
-          var final_price = input_price*duartion_price*value_api;  
+          var final_price = input_price*duartion_price;  
         }
         else{
           var final_price = input_price*value_api;
@@ -608,8 +634,8 @@ Users can delegate the validation rights associated with their XPNET tokens to o
         var final_located = final_price*final_xp_de;
 
         jQuery(".est_percentage span").html(precent_val+"%");
-        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
-        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+        jQuery(".final_value_eva p").html(final_price.toFixed(2)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(2));
       });
       $(document).on("click",".stak_btn_detail",function(event){
         event.preventDefault();
@@ -620,19 +646,33 @@ Users can delegate the validation rights associated with their XPNET tokens to o
         var value_api = $("#value_full_price").attr("data-val");
         var xp_type = $("#xp_type_selection").val();
         if(duartion_price!=undefined){
-          var final_price = input_price*duartion_price*value_api;  
+          var final_price = input_price*duartion_price;  
         }
         else{
           var final_price = input_price*value_api;
           precent_val =0;
         }
         var final_xp_de = parseFloat(value_api);
-        var final_located = final_price*final_xp_de;
+        var final_located = final_price*value_api;
         jQuery(".est_percentage span").html(precent_val+"%");
-        jQuery(".final_value_eva p").html(final_price.toFixed(3)+xp_type);
-        jQuery(".final_value_eva span").html("$"+final_located.toFixed(3));
+        jQuery(".final_value_eva p").html(final_price.toFixed(2)+xp_type);
+        jQuery(".final_value_eva span").html("$"+final_located.toFixed(2));
       });
+      $('#months3').click()
+      jQuery(".final_value_eva span").html("$0.00");
+      console.log(jQuery("#value_full_price"))
+      if(window.innerWidth <= 600) document.getElementById("value_full_price").setAttribute('placeholder', 'Enter amount')
+      if(window.innerWidth > 600) {
+        document.getElementById('subtla').innerHTML = `Delegate XPNET to validators to earn rewards <br>and mint a chain-agnostic NFT for free.`
+      }
      });
+
+     const goToStake = () => {
+      var input_price = jQuery("#value_full_price").val();
+      var duartion_price = jQuery(".durationGroup input[type=radio]:checked").attr("data-price");
+      const query = input_price ? `?amount=${input_price}&duration=${duartion_price}` : ''
+      window.open(`https://stake.xp.network${query}`)
+     }
   </script>
 
 

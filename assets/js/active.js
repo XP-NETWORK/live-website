@@ -93,7 +93,7 @@ $(document).ready(function(){
                        <div class="tnx-container">
                         <span class="thanksImage"></span>
                         <div class="tnx-h1">Thank You!</div>
-                           <div style="text-align:center;">We received your application <br>and will contact you soon</div>
+                           <div style="text-align:center;">Thank you for your interest!<br>We'll be in touch soon</div>
                        </div>`;
                     }
                  }
@@ -151,7 +151,7 @@ $(document).ready(function(){
                        <div class="tnx-container">
                         <span class="thanksImage"></span>
                         <div class="tnx-h1">Thank You!</div>
-                           <div style="text-align:center;">We received your application <br>and will contact you soon</div>
+                           <div style="text-align:center;">Thank you for your interest!<br>We'll be in touch soon</div>
                        </div>`;
                     }
                  }

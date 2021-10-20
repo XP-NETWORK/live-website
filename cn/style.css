@@ -3625,3 +3625,11 @@ span.commLinkIcon img {
 .sinComLink> a:hover span.commLinkIcon img {
     filter: unset;
 }
+
+img.chinaComm {
+    filter: unset !important;
+}
+
+.commuBanarCont.cnp {
+    max-width: 560px;
+}

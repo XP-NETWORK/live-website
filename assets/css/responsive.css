@@ -4,7 +4,6 @@
 }
 
 
-
 @media only screen and (min-width: 992px) {
 
 	.headerAbsulate .main_menu> li> a {
@@ -735,9 +734,63 @@
 	}
 
 }/*(max-width: 767px)*/
-       
+       .mobile-img-stake {
+		   display: none !important;
+	   }
 @media only screen and (max-width: 575px) {
-	
+
+	.rewardPoolCont h2 {
+		margin-bottom: 10px;
+	}
+
+	.rewardPoolCont p {
+		font-size: 15px;
+	}
+
+	.btns_box {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.rewardPool {
+		padding-top: 10px;
+		padding-bottom: 42vh;
+		padding-left: 16px;
+		padding-right: 16px;
+		background: #191E34;
+		box-shadow: 0px 4px 9px rgba(19, 35, 58, 0.02);
+	}
+	.rewardPool .blackBtn {
+		background: transparent;
+		padding: 0px;
+	}
+	.rewardPoolCont {
+		padding-top: 30px;
+		padding-right: 11px;
+	}
+	.rewardPooImg img {
+		height: auto;
+		bottom: 0px;
+		top: auto;
+		width: 100%;
+	}
+	section.stakeContainer {
+		padding: 36px 0 32px;
+	}
+	.calculateBox, .nftRewardBox {
+		padding: 26px;
+		padding-top: 20px;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	.durationGroup label {
+		width: 40%;
+		max-width: 100%;
+	}
+	select#xp_type_selection {
+		width: 60px;
+		display: none;
+	}
 	.roadmap_list {
 	    padding: 0 0px 0 35px;
 	    margin: 0;
@@ -844,7 +897,12 @@ margin: 0;
 		padding: 8px 12px;
 		font-size: 15px;
 	}
-
+	.desktop-img-stake {
+		display: none !important;
+	}
+	.mobile-img-stake {
+		display: block !important;
+	}
 	.homeBanarImg {
 		position: unset;
 		-webkit-transform: unset;
@@ -914,6 +972,21 @@ margin: 0;
 		padding: 40px 20px 10px 20px;
 	}
 
+	.stakeBanar p {
+		margin-bottom: 36px;
+		padding: 0 8px;
+	}
+
+	.stakwrap a {
+	}
+
+	.btns_box {
+		display: flex;
+		justify-content: center;
+		margin: 0 -15px;
+		width: auto;
+	}
+
 
 }
     
@@ -928,9 +1001,43 @@ margin: 0;
 @media only screen and (max-width: 375px) {
 
 }
-   
-@media only screen and (max-width: 575px) {
 
+@media only screen and (max-width: 600px) {
+    .btns_box a {
+        font-size: 13px;
+        padding: 11px;
+    }
+    .duraSInp label {
+        width: 100%;
+        margin: 5px;
+    }
+    .calculateBox label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+        letter-spacing: 0.03em;
+        color: #0F1223;
+        margin-bottom: 12px;
+    }
+    .calculateBox input#value_full_price {
+        width: 100%;
+    }
+    section.faqArea {
+        margin-top: 35px;
+        padding-bottom: 58px !important;
+    }
+
+    .faqContainer>h2 {
+    	margin-bottom: 22px;
+    }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+	.section.stakeContainer {
+		padding-bottom: 0px;
+	}
 	.joinTemMdal.modal-dialog .modal-content {
 	    padding: 24px 24px 48px 24px;
 	}
@@ -1261,8 +1368,59 @@ margin: 0;
 		display: none;
 	}
 
+	.nftRewardBox p,
 	p {
 		font-size: 15px;
+	}
+
+	.nftRewarImg img {
+		margin-bottom: 18px
+	}
+
+	.stakeBanar h1 {letter-spacing: 0;margin-bottom: 9px;}
+
+	.stakeBanar p br {
+		display: none;
+	}
+
+	.stakwrap .blackBtn {
+		margin: 0;
+		padding: 8px 12px;
+	}
+
+	.stakwrap .blackBtn:first-child {
+		margin-right: 14px;
+	}
+
+	.calculateBox h2 {
+		margin-bottom: 50px;
+	}
+
+	.calculateBox label {
+		width: 100%;
+		margin: 0;
+	}
+
+	.durationGroup>div {
+		display: block;
+		width: 50%;
+		padding: 6px 8px;
+	}
+
+	.durationGroup {
+		margin: 12px -8px 0 -8px;
+		margin-bottom: 36px;
+	}
+
+	.stakeBtn {
+		margin-top: 22px;
+	}
+
+	input#value_full_price {
+	}
+
+	.singleInp label.enter_current_value {
+		margin-bottom: 16px;
 	}
 
 }/*(max-width: 575px)*/
